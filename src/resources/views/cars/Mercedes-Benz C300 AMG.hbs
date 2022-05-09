@@ -1,0 +1,339 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+    <section class="breadcrumb-section set-bg" data-setbg="/img/imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="/">Home</a>
+                            <a href="/">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (1).jpg" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (1).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (1).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (2).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (2).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (3).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (3).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (4).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (4).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (6).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (6).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (7).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (7).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (8).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (8).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (9).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (9).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (10).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (10).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c300 amg/mercedes c300 amg (11).jpg"
+                                src="/img/img/mercedes c300 amg/mercedes c300 amg (11).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Mercedes C300 AMG</h3>
+                        <div class="product__details__rating">
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">1.897.000.000 VND</div>
+                        <p>Hiện tại, Mercedes-Benz Việt Nam đang phân phối dòng C-Class với 3 phiên bản C200, C200 Exclusive và C300 AMG. Trong đó, C200 là bước ngoặt từ bỏ phân khúc bình dân để tiến lên xe sang. C200 Exclusive dành cho những khách hàng thích hưởng thụ những giá trị cốt lõi của Mercedes. </p>
+                        <ul>
+                            <li><b>Tải trọng</b> <span>555 kg</span></li>
+                            <li><b>Động Cơ</b> <span>Xăng I4 tăng áp 2.0L</span>
+                            <span></span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios/30/000000/git.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe width="560" height="315" style="margin-top: 20px" src="https://www.youtube.com/embed/7OQ-luPiaIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                        aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                        aria-selected="false">Thông Tin Chi Tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                        aria-selected="false">Đánh Giá <span>(1)</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Ngoại Thất</h6>
+                            <p>Khác với 2 bản C200 và C200 Exclusive, Mercedes C300 AMG 2021 khoác lên mình bộ cánh đậm chất thể thao kết hợp cùng gói trang bị Night Package. Xe có kích thước tổng thể dài x rộng x cao lần lượt là 4686 x 1810 x 1442 mm. </p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (2).jpg">
+                            <br><br>
+                            <p>Nổi bật nhất ở phần đầu xe là bộ lưới tản nhiệt mới dạng kim cương thời thượng thay thế cho dạng 2 nan ngang ở thế hệ cũ. Khi tiếp xúc với ánh sáng, phần đầu xe của C300 AMG 2021 sẽ dễ dàng thu hút mọi ánh nhìn.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (3).jpg">
+                            <br><br>
+                            <p>C300 AMG 2021 được ưu ái sở hữu đèn pha công nghệ Multi-Beam LED bao gồm 84 bóng LED được kiểm soát độc lập. Từ đó giúp không gây chói cho luồng phương tiện ngược chiều. Công nghệ này cũng đang được áp dụng cho đàn anh E300 AMG 2021.</p>
+                            <p>Đi kèm có có tính năng Ultra Range Highbeam cho phép chiếu xa lên đến 650 mm, xa nhất của ngành ô tô hiện nay. So về hệ thống đèn, các đối thủ không “có cửa” để so kè cùng C300 AMG 2021.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (4).jpg">
+                            <br><br>
+                            <p>Nhờ gói trang bị Night Package, hông xe trở nên thể thao hơn hẳn với các chi tiết sơn đen như gương chiếu hậu và viền cửa kính.</p>
+                            <p>“Dàn chân” bên dưới là bộ vành 5 chấu kép hình ngôi sao đặc trưng của AMG, tượng tự như đàn anh E300 AMG. Bên cạnh nước sơn đen, gương chiếu hậu của xe còn được tích hợp các tính năng gập-chỉnh điện, chống chói tự động, nhớ 3 vị trí và đèn báo rẽ.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (5).jpg">
+                            <br><br>
+                            <p>Nhìn từ sau, C300 AMG 2021 cũng có thiết kế khá tương đồng với 2 bản C200 và C200 Exclusive. Nếu tinh ý, bạn sẽ nhận ra phần cản sau của C300 AMG đã được sơn đen toàn bộ thay vì có đường viền crom mỏng nối liền ống xả như 2 bản còn lại.</p>
+                            <p>Nổi bật nhất vẫn là cụm đèn LED đồ hoạ sợi phản quang hình chữ “C” hướng ra ngoài thay thế cho kiểu dáng hình cánh chim ở phiên bản cũ.</p>
+                        <h6>Nội Thất</h6>  
+                            <p>Bước vào bên trong, bạn sẽ không thể kìm được sự phấn khích bởi phong cách thiết kế đậm chất thể thao trên nền chất liệu cao cấp. Xe có trục cơ sở dài 2840 mm kết hợp cùng cửa sổ trời chỉnh điện phía trên tạo nên không gian rất rộng rãi và thoáng đãng.</p> 
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (6).jpg">
+                            <br><br>
+                            <p>Khu vực điều khiển trung tâm ở mặt táp lô được ốp gỗ Anthracite open-pore màu xám tạo cái nhìn sang trọng, đẳng cấp. Ấn tượng nhất là màn hình cảm ứng kích thước khủng 10.25 inch dạng nổi đậm chất xe sang.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (7).jpg">
+                            <br><br>
+                            <p>Là phiên bản thể thao, do đó vô lăng 3 chấu của C300 AMG 2021 có thiết kế dạng đáy phẳng và được bọc da Nappa êm ái. Đi kèm là 2 nút cảm ứng Touch Control Buttons hiện đại và bộ nhớ 3 vị trí. Lẫy chuyển số là chi tiết không thể thiếu trên mẫu xe này.</p>
+                            <p>Hàng ghế trước của Mẹc C300 AMG 2021 có thể chỉnh điện, nhớ 3 vị trí giúp chủ nhân có thể thiết lập tư thế ngồi thoải mái nhanh chóng.</p>                          
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (8).jpg">
+                            <br><br>
+                            <p>Toàn bộ ghế ngồi đều được bọc da Artico cao cấp mang đến cảm giác êm ái nhưng không quá lún để hành khách cảm thấy phấn khích khi xe tăng tốc. Cửa sổ hai bên phía sau được tích hợp màn che nắng vừa làm mát, vừa tạo không gian riêng tư.</p>
+                            <p>Xe C300 AMG 2021 có dung tích khoang hành lý tiêu chuẩn đạt 356 lít và tăng lên 1510 lít khi gập toàn bộ hàng ghế sau. Đăc biệt xe được trang bị tính năng đá cốp giúp bạn có thể mở cốp bằng chân khi hai tay đang bận xách đồ.</p>
+                        <h6>Tiện Nghi</h6>     
+                            <p>Khả năng làm mát của C300 AMG 2021 “ăn đứt” mọi đối thủ trong phân khúc với dàn điều hoà tự động 3 vùng Thermotronic. Đi kèm là các cửa gió cho hàng ghế sau.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (9).jpg">
+                            <br><br>
+                            <p>Mercedes-Benz C300 AMG 2021 có thể sẽ làm bạn choáng ngợp trước hàm lượng Options dày đặc. Đáng chú ý nhất làm màn hình cảm ứng 10.25 inch và dàn âm thanh vòm Burmester 13 loa.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (10).jpg">
+                            <br><br>
+                            <ul>Với công suất 590W, bạn sẽ có cảm giác đang ngồi ở một rạp hát cho dòng nhạc thính phòng hoặc sôi động với những dòng nhạc Trance hay EDM. Ngoài ra, xe còn có nhiều tính năng và trang bị giải trí khác như:
+                                <li>Bộ thu sóng phát thanh, kết nối Apple Carplay và Android Auto, Bluetooth </li>
+                                <li>Hệ thống GPS tích hợp bản đồ Việt Nam</li>
+                                <li>Touchpad điều khiển cảm ứng trên bệ trung tâm</li>
+                                <li>Sạc không dây</li>
+                                <li>Hệ thống khóa xe thông minh và khởi động bằng nút bấm KEYLESS-GO </li>
+                                <li>Cổng lắp đặt giá để Ipad</li>
+                            </ul>
+                        <h6>Vận Hành</h6>
+                            <p>Tạo nên danh tiếng cho C300 AMG 2021 là khối động cơ Xăng I4 tăng áp 2.0L. Cỗ máy này có khả năng sản sinh công suất tối đa 258 mã lực, mô men xoắn cực đại 370 Nm.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (1).jpg">
+                            <br><br>
+                            <p>Toàn bộ sức mạnh được truyền xuống hệ dẫn động cầu sau thông qua hộp số tự động 9 cấp 9G-TRONIC. Hộp số của C300 AMG 2021 hoạt động êm ái và mượt mà đến mức bạn không thể nhận ra xe vừa chuyển số. </p>
+                            <p>Với cấu hình trên, C300 AMG 2021 có thể tăng tốc từ 0-100 km/h trong 5.9 giây trước khi đạt tốc độ tối đa 250 km/h.</p>
+                            <p>Mang trong mình “dòng máu” AMG do đó âm thanh phát ra từ khối động cơ của C300 AMG có phần ồn hơn C200 và C200 Exclusive. Tuy nhiên, khi bạn lên xe vào đóng cửa lại, mọi âm thanh bên ngoài gần như được triệt tiêu.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (11).jpg">
+                            <br><br>
+                            <p>Dù có khả năng tăng tốc ấn tượng, tuy nhiên trải nghiệm chính mà C300 AMG 2021 mang đến cho chủ nhân là sự êm ái. Chiếc xe vượt lên rất nhẹ nhàng, không gắt và bốc như đối thủ BMW 330i M-Sport 2021.</p>
+                            <p>Sau lần nâng cấp giữa dòng đời (Facelift), C300 AMG 2021 trở về với hệ thống treo Dynamic Body Control có khả năng thích ứng liên tục với điều kiện mặt đường.</p>
+                            <img src="/img/img/mercedes c300 amg/mercedes c300 amg (12).jpg">
+                            <br><br>
+                            <p>Ở chế độ Sport và Sport +, hệ thống treo được siết cứng hơn kết hợp cùng hệ thống lái biến thiên Sports Direct-Steer cho cảm giác lái thể thao. </p>
+                            <p>Hệ thống treo sẽ mềm mại hơn khi kích hoạt chế độ Eco và Comfort cho chủ nhân cảm giác thư giãn, nhẹ nhàng khi đi trong phố. C300 AMG 2021 có mức tiêu hao nhiên liệu trong đô thị, ngoài đô thị, kết hợp 10.71L/100km, 5.99L/100km, 7.71L/100km.</p>
+                        <h6>An Toàn</h6>
+                            <ul>Trong dòng xe Mercedes C-Class 2021, C300 AMG là phiên bản duy nhất được trang bị camera 360. Qua đó giúp chủ nhân có thể thực hiện thao tác lùi xe một cách dễ dàng hơn nhờ góc nhìn bao quát. Ngoài ra, xe còn một bảng danh sách an toàn dày đặc gồm: 
+                                <li>7 túi khí</li>     
+                                <li>Cruise Control</li>    
+                                <li>Phanh tay điện tử</li>     
+                                <li>Hệ thống hỗ trợ đỗ xe chủ động </li>    
+                                <li>Cân bằng điện tử</li>    
+                                <li>Chức năng cảnh báo mất tập trung </li>    
+                                <li>Lốp xe run-flat </li>    
+                                <li>Hệ thống ESP Curve Dynamic Assist giúp hỗ trợ ổn định khi vào cua </li>    
+                                <li>Dây đai an toàn 3 điểm cho tất cả các ghế với bộ căng đai khẩn cấp và giới hạn lực siết</li>    
+                                <li>Đèn phanh Adaptive nhấp nháy khi phanh gấp </li>    
+                                <li>Hệ thống khóa cửa trung tâm với chức năng tự động khóa khi xe chạy và mở khóa trong trường hợp khẩn cấp </li>    
+                                <li>Chống bó cứng phanh </li>    
+                                <li>Hỗ trợ phanh khẩn cấp</li>    
+                                <li>Chức năng chống trượt</li>   
+                            </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Số Chi Tiết</h6>
+                        <table border="solid" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td><strong><i>Tên xe</i></strong></td>
+                                <td><strong>Mercedes-Benz C300 AMG</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Số chỗ ngồi</i></strong></td>
+                                <td>05 chỗ ngồi</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Kích thước tổng thể DxRxC (mm)</i></strong></td>
+                                <td>4686 x 1810 x 1442</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Chiều dài cơ sở</i></strong></td>
+                                <td>2840</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tải trọng</i></strong></td>
+                                <td>555kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Động cơ</i></strong></td>
+                                <td>Xăng I4 tăng áp 2.0L</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Dung tích động cơ</i></strong></td>
+                                <td>1991cc</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Dung tích bình nhiên liệu</i></strong></td>
+                                <td>66L</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Công suất cực đại</i></strong></td>
+                                <td>258 mã lực</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Mô men xoắn cực đại</i></strong></td>
+                                <td>370 Nmt</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Hộp số</i></strong></td>
+                                <td>Tự động 9 cấp 9G-TRONIC</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Hệ dẫn động</i></strong></td>
+                                <td>Cầu sau</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Hệ thống treo trước/sau</i></strong></td>
+                                <td>Dynamic Body Control</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tay lái trợ lực</i></strong></td>
+                                <td>Điện Direct-Steer với tỉ số truyền lái biến thiên theo tốc độ</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tốc độ tối đa</i></strong></td>
+                                <td>250 km/h</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Chế độ lái</i></strong></td>
+                                <td>Eco, Comfort, Sport, Sport+</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tăng tốc 0-100km/h</i></strong></td>
+                                <td>5.9 giây</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Cỡ mâm</i></strong></td>
+                                <td>18 inch</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Mức tiêu hao nhiên liệu trong đô thị</i></strong></td>
+                                <td>10.71L/100km</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Mức tiêu hao nhiên liệu ngoài đô thị</i></strong></td>
+                                <td>5.99L/100km</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Mức tiêu hao nhiên liệu kết hợp</i></strong></td>
+                                <td>	7.71L/100km</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<br>
+<br>
+<hr>

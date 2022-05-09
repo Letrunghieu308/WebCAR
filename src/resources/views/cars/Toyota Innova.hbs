@@ -1,0 +1,337 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+    <section class="breadcrumb-section set-bg" data-setbg="/img/imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="/">Home</a>
+                            <a href="/me/stored/courese">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="/img/img/toyota innova/toyota innova (2).jpg" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (2).jpg"
+                                src="/img/img/toyota innova/toyota innova (2).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (1).jpg"
+                                src="/img/img/toyota innova/toyota innova (1).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (3).jpg"
+                                src="/img/img/toyota innova/toyota innova (3).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (4).jpg"
+                                src="/img/img/toyota innova/toyota innova (4).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (5).jpg"
+                                src="/img/img/toyota innova/toyota innova (5).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (6).jpg"
+                                src="/img/img/toyota innova/toyota innova (6).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (7).jpg"
+                                src="/img/img/toyota innova/toyota innova (7).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (8).jpg"
+                                src="/img/img/toyota innova/toyota innova (8).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (9).jpg"
+                                src="/img/img/toyota innova/toyota innova (9).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (10).jpg"
+                                src="/img/img/toyota innova/toyota innova (10).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (11).jpg"
+                                src="/img/img/toyota innova/toyota innova (11).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (12).jpg"
+                                src="/img/img/toyota innova/toyota innova (12).jpg" alt="">
+                            <img data-imgbigurl="/img/img/toyota innova/toyota innova (13).jpg"
+                                src="/img/img/toyota innova/toyota innova (13).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Toyota Innova</h3>
+                        <div class="product__details__rating">
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">989.000.000 VND</div>
+                        <p>Toyota Innova được đánh giá là một mẫu xe 7 chỗ luôn nằm trong sự lựa chọn hàng đầu của khách hàng trong nhiều năm trở lại đây. Những thành công nhất định trong việc chinh phục người dùng của mẫu xe này càng khiến cho sức “nóng” của mỗi phiên bản mới khi ra mắt.</p>
+                        <ul>
+                            <li><b>Tải trọng</b> <span>575 kg</span></li>
+                            <li><b>Động Cơ</b> <span>Xăng, 2.0L, 4 xi lanh</span>
+                            <span></span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios/30/000000/git.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe width="560" height="315" style="margin-top: 50px" src="https://www.youtube.com/embed/m9cTh9M_2FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                        aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                        aria-selected="false">Thông Tin Chi Tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                        aria-selected="false">Đánh Giá <span>(1)</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Ngoại Thất</h6>
+                            <p>So với phiên bản cũ trước đó, Toyota Innova 2020 Facelift có rất nhiều sự thay đổi cả về thiết kế ngoại thất lẫn tính năng tiện ích trong xe. Kích thước tổng thể của Innova trên phiên bản 2020 D x R x C = 4735 x 1830 x 1795 (mm), chiều dài cơ sở 2750 (mm), cùng với đó là khoảng sáng gầm 178 mm giúp mẫu xe có thể dễ dàng vượt qua các ổ gà hay đoạn đường ngập nước.</p>
+                            <img src="/img/img/toyota innova/toyota innova (2).jpg">
+                            <br><br>
+                            <p>Nhìn từ phía trước, phiên bản mới của Toyota Innova cho thấy được sự cứng cáp hơn khá nhiều. Cụm lưới tản nhiệt hình thang góc cạnh kết hợp các thanh ngang màu đen. Vị trí thanh ngang mạ bạc đã được loại bỏ nhằm mang đến sự đồng nhất. Đặc biệt, hệ thống đèn pha vuông vức, cá tính đã được nâng lên dạng LED giúp tăng tính quan sát cho người lái.</p>
+                            <img src="/img/img/toyota innova/toyota innova (3).jpg">
+                            <br><br>
+                            <p>Đối với phiên bản Venturer, hệ thống chiếu sáng còn được trang bị thêm đèn chiếu ban ngày khá tiện ích. Phía dưới là cụm đèn sương mù được đặt ở vị trí thấp hơn mang đến sự khác biệt cho phần đầu xe.</p>
+                            <img src="/img/img/toyota innova/toyota innova (4).jpg">
+                            <br><br>
+                            <p>Trên Toyota Innova bản 2020, phần thân xe cũng có sự tinh chỉnh nhẹ. Ngoài các đường gân dập nổi chạy dọc thân xe, các chi tiết như tay nắm cửa, gương chiếu hậu cũng được mạ crom sang trọng. Sự khác biệt nhất có thể kể đến là vòm bánh xe (bản Venturer) được sử dụng hợp kim nhôm thay vì sơn đen mang đến sự cá tính và thể thao cho chiếc xe.</p>
+                            <p>Cùng với đó là thiết kế mâm xe 16 – 17 inch tùy từng phiên bản, 5 chấu dạng chữ “V” nhận được nhiều đánh giá cao từ phía người dùng.</p>
+                            <img src="/img/img/toyota innova/toyota innova (5).jpg">
+                            <br><br>
+                            <p>Phần phía sau xe Toyota Innova được thiết kế khá chắc chắn với cụm đèn hậu lớn, sử dụng công nghệ LED. Kết hợp với đó là cánh gió thể thao phía trên, vây cá ăng ten giúp mẫu xe không kém phần hiện đại so với các đối thủ xe ô tô Suzuki Ertiga hay Mitsubishi Xpander.</p>
+                        <h6>Nội Thất</h6>  
+                            <p>Không chỉ có những thay đổi về bên ngoài chiếc xe Toyota 7 chỗ này, không gian nội thất của Toyota Innova 2020 cũng được làm mới khá nhiều. Điều này giúp khách hàng có thêm được nhiều trải nghiệm và thực sự cảm thấy hài lòng.</p> 
+                            <img src="/img/img/toyota innova/toyota innova (6).jpg">
+                            <br><br>
+                            <p>Với taplo được thiết kế theo phong cách lượn sóng, các tính năng điều khiển dồn về vị trí người lái. Khi bước vào không gian khoang phía trước, người dùng có thể cảm thấy được sự thư giãn và khá nhẹ nhàng, sang trọng mà mẫu xe đem đến.</p>
+                            <p>Trên phiên bản mới này, nhà sản xuất cũng cung cấp đến khách hàng 2 tone màu chủ đạo là nâu và đen trên các phiên bản. Hầu hết khách hàng đều cảm thấy hài lòng về chi tiết thiết kế này.</p>
+                            <img src="/img/img/toyota innova/toyota innova (7).jpg">
+                            <br><br>
+                            <p>Trên Toyota Innova phiên bản 2020 Facelift, vô lăng xe đã được nâng cấp về thiết kế. Ở phiên bản G có thêm trải nghiệm ốp gỗ, bọc da cùng rất nhiều phím bấm tiện ích được tích hợp. Hệ thống đồng hồ sử dụng Optitron hoặc Analog (bản Innova E) hiển thị đầy đủ thông số báo Eco, vị trí cần số hay lượng tiêu thụ nhiên liệu một cách rõ nét.</p>
+                            <p>Ngoài ra, việc tích hợp màn hình hiển thị TFT 4.2 inch cũng giúp không gian khoang nội thất trở nên sang trọng hơn và không bị đánh giá là mẫu xe chủ yếu chạy dịch vụ.</p>
+                            <img src="/img/img/toyota innova/toyota innova (8).jpg">
+                            <br><br>
+                            <p>Chí có phiên bản cao cấp Innova 2020 V được trang bị ghế da, trong khi đó các phiên bản còn lại là ghế nỉ. Điều này giúp khách hàng có được cảm giác thoải mái, thư giãn trong quá trình trải nghiệm.</p>
+                            <img src="/img/img/toyota innova/toyota innova (9).jpg">
+                            <br><br>
+                            <p>Cùng với đó là ghế lái có thể chỉnh điện 8 hướng hoặc chỉnh tay 6 hướng tùy phiên bản, hàng ghế thứ 2 chỉnh tay 4 hướng, gập 60:40 tiện lợi; hàng ghế thứ 3 gập 50:50 sang hai bên đem đến sự tiện lợi trong quá trình sử dụng.</p>
+                            <img src="/img/img/toyota innova/toyota innova (10).jpg">
+                            <br><br>
+                            <p>Dung tích khoang hành lý trên Toyota Innova 2020 khá nhỏ chỉ ở mức 264L. Tuy nhiên quá trình mở cốp sang hai bên cùng tính năng gập phẳng hàng ghế thứ 3, hàng ghế thứ 2 60:40 cũng giúp không gian chứa đồ được tăng thêm. Tuy nhiên, để chở đồ khi full hành khách thì chưa thực sự thoải mái.</p>
+                        <h6>Tiện Nghi</h6>
+                            <img src="/img/img/toyota innova/toyota innova (11).jpg">
+                            <br><br>
+                            <ul>Rất nhiều tính năng công nghệ đã được nâng cấp bên trong nội thất chiếc xe để khách hàng có thể trải nghiệm bao gồm:
+                                <li>Hệ thống điều hòa tự động, 2 dàn lạnh; có cửa gió phía sau.</li>
+                                <li>Màn hình cảm ứng 7 – 8 inch có kết nối điện thoại thông minh.</li>
+                                <li>Hệ thống âm thanh 6 loa cao cấp.</li>
+                                <li>Kết nối USB/ AUX/ Bluetooth.</li>
+                                <li>Chìa khóa thông minh và khởi động bằng nút bấm.</li>
+                                <li>Cửa sổ chỉnh điện 1 chạm, chống kẹt tất cả các cửa.</li>
+                                <li>Hệ thống báo động và mã hóa động cơ.</li>
+                            </ul>
+                        <h6>Vận Hành</h6>
+                            <img src="/img/img/toyota innova/toyota innova (12).jpg">
+                            <br><br>
+                            <p>Cả 4 phiên bản Toyota Innova 2020 đều sẽ được trang bị động cơ VVT-I kép, máy xăng, 4 xilanh thẳng hàng, 16 van DOHC. Động cơ này giúp sản sinh công suất tối đa 102 mã lực ở 5600 vòng/ phút, mô men xoắn cực đại đạt 183Nm ở 4000 vòng/ phút. Kết hợp với đó là hộp số sàn 5 cấp hoặc AT 6 cấp, hệ thống dẫn động cầu sau giúp chiếc xe vận hành luôn ổn định và mạnh mẽ.</p>
+                            <p>Ngoài ra, mẫu xe ô tô Toyota này cũng được trang bị hệ thống treo trước/ sau dạng tay đòn kép/ liên kết 4 điểm mang đến sự êm ái khi chiếc xe vượt qua những cung đường khó khăn.</p>
+                            <p>Toyota Innova luôn được biết đến là một mẫu xe bền bỉ cùng khả năng tiết kiệm nhiên liệu. Bởi vậy mà trong suốt thời gian qua, đây luôn là sự lựa chọn hàng đầu của khách hàng ngay cả khi mua xe để chạy dịch vụ. Mức tiêu hao nhiên liệu của mẫu xe cụ thể như sau:</p>
+                            <img src="/img/img/toyota innova/toyota innova (14).jpg">
+                            <br><br>
+                        <h6>An Toàn</h6>
+                            <img src="/img/img/toyota innova/toyota innova (13).jpg">
+                            <br><br>
+                            <ul>Trên phiên bản 2020 của Toyota Innova, những tính năng an toàn cao cấp có thể kể đến như sau:
+                            <li>Hệ thống phanh ABS, BA, EBD.</li>
+                            <li>Cảm biến hỗ trợ đỗ xe: 6 chiếc.</li>
+                            <li>Đèn báo phanh khẩn cấp.</li>
+                            <li>Cân bằng điện tử.</li>
+                            <li>Hỗ trợ khởi hành ngang dốc.</li>
+                            <li>Túi khí: 7 chiếc.</li>
+                            <li>Gương chiếu hậu trong xe hai chế độ ngày/ đêm.</li>
+                            <li>Camera lùi trên cả 4 phiên bản.</li>
+                            </ul>
+                        <h6>BẢNG GIÁ XE</h6> 
+                            <img src="/img/img/toyota innova/toyota innova (15).jpg">
+                            
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Số Chi Tiết</h6>
+                        <table border="solid" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td><strong><i>Tên xe</i></strong></td>
+                                <td><strong>Toyota Innova 2020</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Số chỗ ngồi</i></strong></td>
+                                <td>07 chỗ ngồi</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Kích thước tổng thể DxRxC (mm)</i></strong></td>
+                                <td>4735 x 1830 x 1795 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Chiều dài cơ sở</i></strong></td>
+                                <td>2750 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tải trọng</i></strong></td>
+                                <td>575kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Động cơ</i></strong></td>
+                                <td>Xăng, DOHC, 2.0L VVT-i kép, 4 xy lanh thẳng hàng, 16 van, </td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Dung tích động cơ</i></strong></td>
+                                <td>1988cc</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Công suất cực đại</i></strong></td>
+                                <td>102 Hp</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Mô-men xoắn cực đại</i></strong></td>
+                                <td>183 Nm</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Hộp số</i></strong></td>
+                                <td>AT 6 cấp/ MT 5 cấp</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Dẫn động</i></strong></td>
+                                <td>Cầu sau</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Treo trước/sau</i></strong></td>
+                                <td>Tay đòn kép/ Liên kết 4 điểm với tay đòn bên</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Phanh trước/sau</i></strong></td>
+                                <td>Đĩa thông gió/ Tang trống</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Trợ lực lái</i></strong></td>
+                                <td>Thủy lực</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Cỡ lốp</i></strong></td>
+                                <td>16 hoặc 17 inch</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tính năng tiện ích</i></strong></td>
+                                <td>Màn hình cảm ứng 7 inch
+                                    <br>
+                                    Kết nối USB/ AUX/ Bluetooth
+                                    <br>
+                                    Khóa cửa từ xa, khởi động nút bấm
+                                    <br>
+                                    Cửa sổ chỉnh điện
+                                    <br>
+                                    Hệ thống âm thanh 6 loa
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tính năng tiện ích</i></strong></td>
+                                <td>Phanh ABS, BA, EBD
+                                    <br>
+                                    Túi khí: 7 chiếc
+                                    <br>
+                                    Đèn báo phanh khẩn cấp
+                                    <br>
+                                    Cảm biến lùi, hỗ trợ đỗ xe
+                                    <br>
+                                    Hỗ trợ khởi hành ngang dốc
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>

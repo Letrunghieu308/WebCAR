@@ -1,0 +1,202 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+<form class="mt-4 m-2" name="container-form" method="POST" action="/courses/handles-actions">
+    <div> 
+      <a class="m-2 text-dark" href="/me/stored/courese">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M120.26563,10.25281c-1.78719,0.05375 -3.48031,0.80625 -4.73,2.08281l-68.8,68.8c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l68.8,68.8c1.72,1.80062 4.28656,2.52625 6.70531,1.89469c2.40531,-0.63156 4.28656,-2.51281 4.91813,-4.91813c0.63156,-2.41875 -0.09406,-4.98531 -1.89469,-6.70531l-63.93563,-63.93563l63.93563,-63.93562c2.02906,-1.97531 2.64719,-4.99875 1.54531,-7.61906c-1.11531,-2.60688 -3.70875,-4.27313 -6.54406,-4.1925z"></path></g></g></svg>
+      Quản lý showroom</a> 
+<br><br>
+      <h3 >Thùng rác</h3>
+    </div>
+     <div class="mt-4 d-flex align-items-center">
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="checkbox-all">
+          <label class="form-check-label" for="checkbox-all">
+          Chọn tất cả
+        </label>
+      </div>
+     <select class=" ms-2" style="width: 160px; margin: 0 16px 0 16px" name="action" aria-label=".form-select-sm example" required>
+      <option value="">--- Hành động---</option>
+      <option value="restore">Khôi phục</option>
+      <option value="deleteOne">Xóa vĩnh viễn</option>
+    </select>
+    <button class="btn btn-outline-primary btn-sm mt-2 disabled check-all-submit-btn ms-2" >Áp dụng</button>
+    </div>
+  <table class="table mt-4">
+   <thead>
+    <tr>
+      <th scope="col" colspan="2">#</th>
+      <th scope="col">
+        Tên xe 
+         {{{sortable 'name' _sort}}}
+        </th>
+      <th scope="col">
+        Thời gian xóa
+         {{{sortable 'deletedAt' _sort}}}
+        </th>
+      <th></th>
+    </tr>
+   </thead>
+   <tbody> 
+      {{#each courses}}
+    <tr>
+      <td>
+         <div class="form-check">
+          <input class="form-check-input" name="courseIds[]"  type="checkbox" value="{{this._id}}">
+          <label class="form-check-label" for="flexCheckDefault">
+      </div>
+      </td>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.deletedAt}}</td>
+      <td>
+          <a href="" class="btn btn-link btn-restore" data-id="{{this._id}}" >
+            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="Khôi phục" src="https://img.icons8.com/ios/30/000000/settings-backup-restore.png"/>
+          </a>
+          <a href="" class="btn btn-link btn-deleleOne" data-bs-toggle="modal" data-id="{{this._id}}" data-bs-target="#delete-course-modal" >
+            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Xóa vĩnh viễn" src="https://img.icons8.com/material-outlined/30/000000/delete-sign.png"/>
+          </a>
+      </td>
+    </tr>
+      {{else}}
+    <tr>
+      <td colspan="5"> Thùng rác trống
+        <a href="/">Home </a></td>
+    </tr>
+      {{/each}}
+  </tbody>
+  </table> 
+</form> 
+   {{!-- Confirm delete --}}
+  <div id="delete-course-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Xóa dữ liệu?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Bạn có chắc chắn muốn xóa không!!!</p>
+        </div>
+        <div class="modal-footer">
+          <button id="btn-delete-course" type="button" class="btn btn-danger" >Xóa bỏ</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{{! form delete !}}
+
+ 
+
+<form  method="POST" name="delete-course-form" ></form>
+<form  method="POST" name="restore-course-form" ></form>
+
+ 
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+          var courseId;
+        var contaierForm = document.forms['container-form']
+        var deleteForm = document.forms["delete-course-form"]
+        var restoreForm = document.forms["restore-course-form"]
+        var btnDeleteCourse = document.getElementById('btn-delete-course')
+        var exampleModal = document.getElementById('delete-course-modal')
+         var checkboxAll = $('#checkbox-all')
+        var courseItemCheckbox = $('input[name="courseIds[]"]')
+        var checkAllSubmitBtn = $('.check-all-submit-btn')
+        restoreBtn = $('.btn-restore')
+
+        $('#delete-course-modal').on('show.bs.modal', function(event){
+            var button = $(event.relatedTarget)
+            courseId = button.data('id')
+        })
+
+        btnDeleteCourse.onclick = function(){
+          deleteForm.action = '/courses/' + courseId + '/force?_method=DELETE' ;
+          deleteForm.submit();  
+        }
+        //restore button click
+        restoreBtn.click(function(e){
+          e.preventDefault()
+
+          var courseId = $(this).data('id')
+          restoreForm.action = '/courses/' + courseId + '/restore?_method=PATCH' ;
+          restoreForm.submit();  
+        })
+        //checkbox-all click
+        checkboxAll.change(function(){
+          var isCheckedAll = $(this).prop('checked')
+          courseItemCheckbox.prop('checked',isCheckedAll) // check-all
+          renderCheckAllSubmitBtn()
+        })
+
+      // Course items checkbox click 
+        courseItemCheckbox.change(function(){
+          var isCheckedAll = courseItemCheckbox.length === $('input[name="courseIds[]"]:checked').length
+          checkboxAll.prop('checked',isCheckedAll)
+          renderCheckAllSubmitBtn()
+         })
+      //check all btn click
+        checkAllSubmitBtn.on('submit' , function(e){
+          var issubmitable = !$(this).hasClass('disabled')
+          if(!issubmitable){
+            e.preventDefault()
+          }
+        })
+
+
+      // re-render check-all submit button
+         function renderCheckAllSubmitBtn() {
+           var CountChecked = $('input[name="courseIds[]"]:checked').length
+           if(CountChecked > 0 ) {
+              checkAllSubmitBtn.removeClass('disabled')
+           }
+           else{
+             checkAllSubmitBtn.addClass('disabled')
+           }
+         }
+})
+</script>

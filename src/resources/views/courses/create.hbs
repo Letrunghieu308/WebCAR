@@ -1,0 +1,177 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+<style type="text/css">
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+     transition: "color 9999s ease-out, background-color 9999s ease-out";
+     transition-delay: 9999s;
+}
+    *{
+      margin: 0;
+      padding: 0;
+     
+    }
+   
+    .bgimg{
+      margin-top: 0.5em;
+      margin-bottom: -4rem;
+      height: 700px;
+      width: 100%;
+      background-image: url("/img/imgs/background.jpg");
+      background-position: center;
+      background-size: cover;
+      position:sticky;
+      
+    }
+    .card{
+      position: absolute; /* Canh giữa */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background:rgba(0, 0, 0, 0.7);
+    }   
+    .input-group-text{
+      
+      margin-left: -10px;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 0;
+      outline: none;
+      background: transparent;
+    }
+    .input-field{
+      padding: 10px 10px;
+      width: 89%;
+      border-left: 1px solid #727272; 
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 1px solid #727272; 
+      outline: none;
+      background: transparent;
+    }
+    ::placeholder { 
+      color: rgba(255, 255, 255, 0.767);
+      opacity: 1; 
+    }
+    input, select, textarea{
+      color: white;
+    }
+
+    textarea:focus, input:focus{
+      color: white;
+    }
+    select:hover{
+      background-color: rgba(255, 255, 255, 0.404);
+      color:white;
+    }
+    select:focus{
+      background-color: rgba(255, 255, 255, 0.404);
+      color:white;
+    }
+     h1 {position: relative; 
+  	margin: 0 -36px; 
+  	font-size: 30px; 
+  	background: #727272; 
+  	color: #FFFFFF; 
+  	text-shadow: 1px 1px 0px #1A5D6E; 
+  	box-shadow: 0 0 10px #AAA;
+  }
+
+  h1:before {content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: -17px; 
+  width: 0; 
+  height: 0; 
+  border-style:   solid; 
+  border-color: #353535 transparent;
+  border-width: 17px 0 0 17px; 
+  left: 0;
+  }
+  
+  h1:after {content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: -17px; 
+  width: 0; 
+  height: 0; 
+  border-style:   solid; 
+  border-color: #353535 transparent;
+  border-width:  17px 17px 0 0; 
+  right: 0;
+ }
+  
+    
+  </style>
+    
+     <div class="bgimg">
+         <!-- card -->
+    
+    <div class="card" >
+      <div class="card-body" >
+        <h1 class="text-center" style="color:white; font-size: 50px;">Thêm xe mới</h1>
+ 
+    <form method="POST" class="input-group" action="/courses/create" enctype="multipart/form-data">
+        <div class="input-group">
+            <span for="name" class="input-group-text" style="color:white; font-size: 20px; margin-right: 4px">Tên :</span>
+            <input type="text" class="input-field" id="name" name="name" placeholder="Tên">
+        </div>
+        <div class="input-group">
+            <span for="description" class="input-group-text" style="color:white; font-size: 20px; margin-right: 8px"> Giá :</span>
+            <input type="text" class="input-field" id="description" name="description" placeholder="Giá">
+        </div>
+        
+        <div class="input-group" >
+            <span class="input-group-text" style="color:white; font-size: 20px; margin-right: 18px">Ảnh Nền :</span>
+            <input type="file" name="userPhoto"/>
+        </div>
+        
+        <button type="submit" class="btn btn-outline-light mt-4" style="width: 300px;">Cập nhật</button>
+    </form>
+            </div>
+         </div>
+      </div>
+    

@@ -1,0 +1,213 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAT.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" onclick="doSearch()">Search</button>
+      </div>
+ </div>
+</nav>
+ <div class="banner">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner/banner-web-new-morning.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/ford 150 (sau).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/ford ranger.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/kia sedona.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/mazda cx5.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/mercedes c300 amg.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/mercedes-benz GLS.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/porsche 718 boxster.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/porsche macan.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/porsche panamera.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/toyota innova.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/vinfat fadil.jpg" class="d-block w-100">
+            </div>
+          </div>
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+                </div>
+  </div>
+  <div class="content">
+      <div class="sidebar" id="sidebar">
+          <dl>
+              <dt>Hãng sản xuất</dt>
+              <dd>
+                  <a href="#" onclick="getCar('por')">Porsche</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar('mer')">Mercedes</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar('ford')">Ford</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar('mazda')">Mazda</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar('toyota')">Toyota</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar('kia')">KIA</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar('vin')">Vinfast</a>
+              </dd>
+              <dd>
+                  <a href="#" onclick="getCar()">Tất cả</a>
+              </dd>
+          </dl>
+      </div>
+      <form class="info" id='info' name="searchInfo">
+        {{#each courses}}
+        <div class="card box" style="width: 18rem;">
+          <img id="slider7" src="img/ava/{{this.image}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">Giá : {{this.description}}</p>
+            <a href="/cars/{{this.name}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        {{/each}}
+      </form>
+  </div>
+<div class="clearfix"></div>
+
+<script>
+  function doSearch() {
+    let name = $('#search-by-name').val().toLowerCase();
+    $('#info').empty();
+    let data ={};
+    data.name = name;
+    fetch('/courses/search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => response.json())
+      .then(data => {
+      let s = '';
+        for(let i = 0 ; i< data.length ; i++){
+          s+=' <div class="card box" style="width: 18rem;">\n' +
+      '          <img id="slider7" src="img/ava/'+ data[i].image+'" class="card-img-top" alt="...">\n' +
+      '          <div class="card-body">\n' +
+      '            <h5 class="card-title">'+ data[i].name+'</h5>\n' +
+      '            <p class="card-text">Giá : '+ data[i].description+'</p>\n' +
+      '            <a href="/cars/'+ data[i].name+'" class="btn btn-primary">Go somewhere</a>\n' +
+      '          </div>\n' +
+      '        </div>'
+        }
+        $('#info').append(s);
+      })
+      .catch((error) => {
+        console.log('Error:', error);
+      });
+  }
+  function getCar(e){
+    $('#info').empty();
+     let data ={};
+    data.name = e;
+    fetch('/courses/search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => response.json())
+      .then(data => {
+      let s = '';
+        for(let i = 0 ; i< data.length ; i++){
+          s+=' <div class="card box" style="width: 18rem;">\n' +
+      '          <img id="slider7" src="img/ava/'+ data[i].image+'" class="card-img-top" alt="...">\n' +
+      '          <div class="card-body">\n' +
+      '            <h5 class="card-title">'+ data[i].name+'</h5>\n' +
+      '            <p class="card-text">Giá : '+ data[i].description+'</p>\n' +
+      '            <a href="/courses/'+ data[i].name+'" class="btn btn-primary">Go somewhere</a>\n' +
+      '          </div>\n' +
+      '        </div>'
+        }
+        $('#info').append(s);
+      })
+      .catch((error) => {
+        console.log('Error:', error);
+      });
+  }
+  function logout()
+    {
+      $.ajax({
+         url:'/logout',
+          type:'POST',
+      })
+      .then( data => {
+       delete_cookie('token')
+         window.location.href="/login"
+      })
+      .catch(err => {
+        res.json('that bai')
+      })
+    }
+    var delete_cookie = function(name) {     document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;'; };
+</script>

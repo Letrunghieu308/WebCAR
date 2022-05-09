@@ -1,0 +1,295 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+
+    <section class="breadcrumb-section set-bg" data-setbg="/img/imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="/">Home</a>
+                            <a href="/me/stored/courese">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="/img/img/mazda cx5/mazda cx5 (1).jpg" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="/img/img/mazda cx5/mazda cx5 (1).jpg"
+                                src="/img/img/mazda cx5/mazda cx5 (1).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mazda cx5/mazda cx5 (2).jpg"
+                                src="/img/img/mazda cx5/mazda cx5 (2).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mazda cx5/mazda cx5 (3).jpg"
+                                src="/img/img/mazda cx5/mazda cx5 (3).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mazda cx5/mazda cx5 (4).jpg"
+                                src="/img/img/mazda cx5/mazda cx5 (4).jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Mazda CX-5</h3>
+                        <div class="product__details__rating">
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">839.000.000 VNĐ VND</div>
+                        <p>
+                            Không chỉ được biết đến là phiên bản mới ra mắt, Mazda CX5 2020 còn là cái tên nổi bật nhất phân khúc Crossover hạng C tính đến thời điểm hiện tại. Phiên bản này của Mazda CX5 thực sự gây ấn tượng với thiết kế gầm cao, diện mạo cuốn hút và tính năng tiện nghi vô cùng hiện đại.
+                        </p>
+                        <ul>
+                            <li><b>Trọng lượng toàn tải</b> <span>2074 kg</span></li>
+                            <li><b>Động Cơ</b> <span>Xăng SkyActive-G 2.5L</span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios/30/000000/git.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe width="560" height="315" style="margin-top: 50px" src="https://www.youtube.com/embed/tqWY4UBXCME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                        aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                        aria-selected="false">Thông Tin Chi Tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                        aria-selected="false">Đánh Giá <span>(1)</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h5>Ngoại Thất</h5>
+                            <p>
+                                Mazda CX5 2.0L 2021 có dung nhan cực kỳ đạo mạo và ấn tượng. Xe mang bản chất của những chiếc Crossover hiện đại với bộ cánh có kích thước tổng thể dài x rộng x cao lần lượt là 4550 x 1840 x 1680 mm.
+                            </p> <br>
+                            <img src="/img/img/mazda cx5/mazda cx5 (1).jpg">
+                            <p>Phần đầu xe cực kỳ thu hút trong bộ lưới tản nhiệt hình tổ ong bắt mắt, logo Mazda ở vị trí trung tâm cũng được phủ crom bóng đầy nổi bật. Nằm cân đối hai bên đầu xe là cụm đèn trước dạng LED tự động có tính năng mở rộng và cân bằng góc chiếu.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (2).jpg">
+                            <p>Không chỉ vậy, CX-5 2.0L còn rất cuốn hút khi lướt bánh trên đường khi có hệ thống đèn LED ban ngày cực đẹp. Xe cũng được trang bị cụm đèn sương mù dạng LED đầy tinh tế. Hốc hút gió và cản trước bó gọn mang đến cái nhìn đầy tính thẩm mỹ</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (3).jpg">
+                            <p>Nhìn từ một bên, CX-5 rất cao ráo và vững chãi nhờ phần hông vững chắc. Vòm bánh xe mở rộng ôm lấy bộ vành 19 inch thể thao.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (4).jpg">
+                            <p>Xe được trang bị gương chiếu hậu gập-chỉnh điện tích hợp đèn báo rẽ. Mui xe dài và trườn lên phía trước giúp cơ thể cân bằng và bớt đi sự chênh vênh trên những chiếc xe gầm cao.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (5).jpg">
+                            <p>Đuôi xe là sự kết hợp độc đáo của những đường nét cơ bắp trên SUV và trên các mẫu xe Hatchback. Ngay phía trên cao là ăng-ten vây cá mập thể thao cùng dải đèn báo phanh. Tổng thể phần đuôi bầu bĩnh, to lớn cùng đèn hậu dạng lá tre điệu đà.
+                                Nằm gọn gàng khu vực phía dưới là cản sau màu đen dày cộm đi cùng cụm ống xả kép mạ crom bóng. Với vẻ ngoài hoàn hảo cùng thương hiệu Nhật nổi tiếng, không quá khó để lý giải vì sao xe Mazda CX5 xứng đáng với danh hiệu ông trùm phân khúc. </p>
+                            <br>
+                        <h5>Nội Thất</h5>
+                            <p>
+                                Đặt chân vào khoang cabin, khách hàng sẽ cảm nhận ngay độ rộng rãi và thoáng đãng mà xe đang có nhờ chiều dài cơ sở 2700 mm cùng cửa sổ trời trên trần xe. Thông số này “ăn đứt” không gian của đối thủ truyền kiếp Honda CR-V với thông số 2660 mm.
+                            </p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (6).jpg" alt="">
+                            <p>Táp lô có tạo hình cực kỳ hiện đại và sang trọng với cách bố trí vừa cổ điển vừa trẻ trung. Tổng thể bố cục được tạo thành từ những đường thẳng song song tuyệt hảo. Vô lăng của CX-5 có thiết kế 3 chấu bọc da, điều chỉnh 4 hướng tiện lợi.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (7).jpg" alt="">
+                            <p>Khu vực cần số bày trí khá gọn gàng nhưng vẫn rất tỉ mỉ và chi tiết. Đan xen với chất liệu da là các ốp kim loại bóng bẩy, nút bấm ở bảng điều khiển trung tâm khá dễ nhìn nhưng vẫn chưa thật sự tinh xảo.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (8).jpg" alt="">
+                            <p>Với 5 ghế ngồi trải dài cho 2 hàng ghế, Mazda CX5 2.0L 2021 tự tin mang đến cho mỗi hành khách những chỗ ngồi đủ rộng. Các ghế trên xe đều được boc da cao cấp với nhiều tính năng.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (9).jpg" alt="">
+                            <p>Cụ thể ghế lái của xe có thể chỉnh điện, hàng ghế sau tuỳ chỉnh độ nghiêng và gập phẳng, tỉ lệ 40:20:40 linh hoạt. Phần cốp xe cho phép chỉnh điện tiện lợi, dung tích khoang hành lý 505L giúp chủ nhân thỏa sức chứa đồ khi đi xa. </p>
+                            <br>
+                         <h5>Tiện nghi</h5>
+                            <p>
+                                Đặt chân vào khoang cabin, khách hàng sẽ được tận hưởng bầu không khí cực kỳ mát mẻ. CX-5 2.0L sở hữu điều hòa tự động 2 vùng độc lập cùng cửa gió hàng ghế sau giúp lan tỏa luồng khí mát lạnh đều quanh xe.
+                            </p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (10).jpg" alt="">
+                            <p>Chưa dừng lại ở đó, xe còn phô trương mức tiện nghi cao cấp ở khu vực nội thất cùng những tính năng hiện đại như: hệ thống Mazda connect, đầu DVD, màn hình cảm ứng 7 inch, kết nối AUX, USB, Bluetooth, dàn âm thanh 6 loa mang đến những giai điệu cực kỳ bắt tai.</p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (11).jpg" alt="">
+                            <p>Không chỉ vậy, xe Oto Mazda còn có khá nhiều thiết bị tiện ích khác gồm: chìa khoá thông minh, khởi động bằng nút bấm, gạt mưa tự động, cửa sổ chỉnh điện 1 chạm cho vị trí ghế lái, đèn trang điểm trên tấm che nắng, định vị vệ tinh, dẫn đường GPS.</p>
+                            <br>
+                        <h5>Vận hành</h5> 
+                            <br>
+                            <p>
+                                Dưới nắp capo của Mazda CX5 2.0L 2021 là khối động cơ Xăng 2.0L, 4 xy lanh thẳng hàng cho công suất tối đa 153 mã lực, mô men xoắn cực đại 200 Nm. Đi kèm với đó là hộp số tự động 6 cấp giúp quá trình vào số cực mượt mà và tĩnh lặng.
+                            </p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (12).jpg" alt="">
+                            <p>
+                                Xe được thiết lập hệ dẫn động cầu trước cùng chế độ lái thể thao mang đến cảm giác lái rất phóng khoáng nhưng vẫn tối ưu khả năng bám đường. Độ êm ái cũng được đảm bảo với hệ thống treo trước/sau MacPherson/ liên kết đa điểm và bộ lốp dày 225/55R19.
+                            </p>
+                            <p>
+                                Hệ thống phanh của CX-5 2.0L hoạt động rất hiệu quả, ít xảy ra tình trạng phanh nóng lên nhờ sở hữu phanh trước/sau đĩa thông gió/đĩa đặc. Với lợi thế gầm cao 200 mm chủ nhân có thể ung dung điều khiển xe qua vùng ngập nước hoặc leo lề dễ dàng.
+                            </p>
+                            <img src="/img/img/mazda cx5/mazda cx5 (13).jpg" alt="">
+                            <p>
+                                Xe sử dụng vô lăng trợ lực điện, do đó cảm giác đánh lái trên CX-5 2.0L khá nhẹ nhàng và linh hoạt, kể cả khi gặp tình trạng kẹt xe.
+                            </p>
+                            <p>
+                                Khả năng tiết kiệm nhiên liệu cũng được tăng cường với công nghệ tiết kiệm nhiên liệu I-stop. Khi dừng đèn đỏ, động cơ sẽ tự động ngắt nhằm tránh lãng phí nhiên liệu.
+                            </p>
+                            <br>
+                            <h5>An toàn</h5>
+                            <br>
+                            <p>
+                                Mazda CX5 2.0L 2021 sở hữu hệ thống an toàn khá “khủng”. Cụ thể gồm có: 6 túi khí, chống bó cứng phanh, phân phối lực phanh điện tử, hỗ trợ lực phanh khẩn cấp, cân bằng điện tử, kiểm soát lực kéo chống trượt.
+                                Chưa hết, xe còn có: hỗ trợ khởi hành ngang dốc, Cruise control, phanh tay điện tử, giữ phanh tự động, cảm biến trước và sau hỗ trợ đỗ xe, camera lùi. Vì thế hành khách có thể yên tâm giao sự an toàn của mình cho CX-5 2.0L.
+                                
+                            </p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <table border="solid" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td><b>Tên xe</b></td>
+                                <td>Mazda CX5 2.0L 2021</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kích thước tổng thể DxRxC (mm)</b></td>
+                                <td>4550 x 1840 x 1680</td>
+                            </tr>
+                            <tr>
+                                <td><b>Chiều dài cơ sở (mm)</b></td>
+                                <td>2700</td>
+                            </tr>
+                            <tr>
+                                <td><b>Động cơ</b></td>
+                                <td>Xăng 2.0L, 4 xy lanh thẳng hàng</td>
+                            </tr>
+                            <tr>
+                                <td><b>Công suất tối đa (mã lực)</b></td>
+                                <td>153</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mô men xoắn cực đại (Nm)</b></td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hộp số</b></td>
+                                <td>Tự động 6 cấp</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hệ dẫn động</b></td>
+                                <td>Cầu trước</td>
+                            </tr>
+                            <tr>
+                                <td><b>Treo trước/sau</b></td>
+                                <td>MacPherson/ liên kết đa điểm</td>
+                            </tr>
+                            <tr>
+                                <td><b>Phanh trước/sau</b></td>
+                                <td>Đĩa thông gió/đĩa đặc</td>
+                            </tr>
+                            <tr>
+                                <td><b>Khoảng sáng gầm xe (mm)</b></td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td><b>Cỡ lốp</b></td>
+                                <td>225/55R19</td>
+                            </tr>
+                            <tr>
+                                <td><p>Tay lái trợ lực</p></td>
+                                <td>Điện</td>
+                            </tr>
+                        </table>
+                        <p>
+                        Giá xe Mazda CX5 2.0L 2021 niêm yết: 839.000.000 đồng 
+                        Mazda CX5 2.0L có 8 màu sắc ngoại thất gồm: Đỏ, Xám, Trắng, Đen, Xanh, Xám xanh, Nâu, Bạc.
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>Bỉ đã trả giá cho trận thắng 1-0 trước Bồ Đào Nha ở vòng 1/8 EURO 2021 khi mà cả De Bruyne và Eden Hazard dính chấn thương.
+                            De Bruyne dính chấn thương ở đầu hiệp 2 và phải rời sân nhường chỗ cho Mertens. Tiền vệ của Man City bị chấn thương mắt cá chân sau pha phạm lỗi của Joao Palhinha. Trong khi đó, Hazard gặp vấn đề về gân khoeo và phải rời sân ở cuối trận.
+                            “Chúng tôi cần 48 giờ để biết được mức độ chấn thương của Hazard và De Bruyne. 
+                            De Bruyne bị chấn thương mắt cá chân. Cậu ấy đã phải nhận một cú vào bóng quá mạnh từ đối thủ. Hazard thì gặp vấn đề về cơ bắp. 
+                            Chúng tôi sẽ quay trở lại Bỉ tối nay và sẽ có kết quả chẩn đoán vào ngày mai”, 
+                            HLV của tuyển Bỉ, Roberto Martinez phát biểu.Bỉ đã trả giá cho trận thắng 1-0 trước Bồ Đào Nha ở vòng 1/8 EURO 2021 khi mà cả De Bruyne và Eden Hazard dính chấn thương. De Bruyne dính chấn thương ở đầu hiệp 2 và phải rời sân nhường chỗ cho Mertens. Tiền vệ của Man City bị chấn thương
+                            mắt cá chân sau pha phạm lỗi của Joao Palhinha. Trong khi đó, Hazard gặp vấn đề về gân khoeo và phải rời sân ở cuối trận.
+                            “Chúng tôi cần 48 giờ để biết được mức độ chấn thương của Hazard và De Bruyne. 
+                            De Bruyne bị chấn thương mắt cá chân. Cậu ấy đã phải nhận một cú vào bóng quá mạnh từ đối thủ. Hazard thì gặp vấn đề về cơ bắp. Chúng tôi sẽ quay trở lại Bỉ tối nay và sẽ có kết quả chẩn đoán vào ngày mai”,
+                            HLV của tuyển Bỉ, Roberto Martinez phát biểu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>

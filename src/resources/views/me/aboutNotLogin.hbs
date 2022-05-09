@@ -1,0 +1,173 @@
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+ <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/login" style="margin-left: 10px;">Login</a>
+        </li>
+      </ul>
+</nav>
+<style type="text/css">
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+     transition: "color 9999s ease-out, background-color 9999s ease-out";
+     transition-delay: 9999s;
+}
+    *{
+      margin: 0;
+      padding: 0;
+
+    }
+     .bgimg{
+      margin-top: 0.5em;
+      margin-bottom: -4rem;
+      height: 900px;
+      width: 100%;      
+      background-image: url("/img/imgs/background.jpg");
+      /* background-color:rgb(255, 255, 255); */
+      background-position: center;
+      background-size: cover;
+      position:sticky;
+        
+    }
+    
+    .card{
+      position: absolute; /* Canh giữa */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background:rgba(0, 0, 0, 0.7);
+    }   
+    .input-group-text{
+      
+      margin-left: -10px;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 0;
+      outline: none;
+      background: transparent;
+    }
+    .input-field{
+      padding: 10px 10px;
+      width: 100%;
+      border-left: 1px solid #727272; 
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 1px solid #727272; 
+      outline: none;
+      background: transparent;
+    }
+    ::placeholder { 
+      color: rgba(255, 255, 255, 0.767);
+      opacity: 1; 
+    }
+    input, select, textarea{
+      color: white;
+    }
+
+    textarea:focus, input:focus{
+      color: white;
+    }
+    select:hover{
+      background-color: rgba(255, 255, 255, 0.404);
+      color:white;
+    }
+    select:focus{
+      background-color: rgba(255, 255, 255, 0.404);
+      color:white;
+    }
+
+    h1 {position: relative; 
+  	margin: 0 -36px; 
+  	font-size: 30px; 
+  	background: #727272; 
+  	color: #FFFFFF; 
+  	text-shadow: 1px 1px 0px #1A5D6E; 
+  	box-shadow: 0 0 10px #AAA;
+  }
+
+  h1:before {content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: -17px; 
+  width: 0; 
+  height: 0; 
+  border-style:   solid; 
+  border-color: #353535 transparent;
+  border-width: 17px 0 0 17px; 
+  left: 0;
+  }
+  
+  h1:after {content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: -17px; 
+  width: 0; 
+  height: 0; 
+  border-style:   solid; 
+  border-color: #353535 transparent;
+  border-width:  17px 17px 0 0; 
+  right: 0;
+ }
+
+  </style>
+
+  <div class="bgimg">
+    <div class="card" >
+        <div class="card-body" >
+           <h1 class="text-center" style="color:white; font-size: 50px;">Đăng kí liên hệ</h1>
+    <form method="POST" action="/chatroom/doContact" class="mt-4 input-group">
+        <div class="input-group">
+            <span for="name" class="input-group-text" style="color:white; font-size: 20px; ">Họ và tên :</span>
+            {{!-- <label for="name" class="form-label">Tên</label> --}}
+            <input type="text" class="input-field" id="name" name="name">
+        </div>
+        <div class="input-group">
+            <span for="address" class="input-group-text" style="color:white; font-size: 20px; ">Địa chỉ :</span>
+            {{!-- <label for="address" class="form-label"> Địa chỉ</label> --}}
+            <input type="text" class="input-field" id="address" name="address">
+        </div>
+        <div class="input-group">
+            <span for="email" class="input-group-text" style="color:white; font-size: 20px; ">Email :</span>
+            {{!-- <label for="email" class="form-label"> Ngày sinh </label> --}}
+            <input type="text" class="input-field" id="email" name="email">
+        </div>
+        <div class="input-group">
+            <span for="phoneNumber" class="input-group-text" style="color:white; font-size: 20px;">Số điện thoại :</span>
+            {{!-- <label for="phoneNumber" class="form-label"> Số điện thoại </label> --}}
+            <input type="text" class="input-field" id="phoneNumber" name="phoneNumber">
+        </div>
+        <div class="input-group">
+            <span for="message" class="input-group-text" style="color:white; font-size: 20px; ">Lời nhắn :</span>
+            {{!-- <label for="message" class="form-label"> Lời nhắn </label> <br> --}}
+           <textarea type="text" class="input-field"  id="message" name="message"></textarea>
+        </div>
+        
+        <br>
+        <button type="submit" class="btn btn-outline-light mt-4" style="width: 300px;">Thêm</button>
+        {{!-- <button type="submit" class="btn btn-primary">Thêm</button> --}}
+    </form>
+        </div>
+    </div>
+  </div>
+      
+          
+    

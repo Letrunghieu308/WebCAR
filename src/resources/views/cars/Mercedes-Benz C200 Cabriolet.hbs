@@ -1,0 +1,289 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+    <section class="breadcrumb-section set-bg" data-setbg="/img/imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="../main/index.html">Home</a>
+                            <a href="../main/index.html">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (1).jpg" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (1).jpg"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (1).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (3).jpg"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (3).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (4).jpg"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (4).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (5).jpg"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (5).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (6).jpg"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (6).jpg" alt="">
+                            <img data-imgbigurl="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (7).jpg"
+                                src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (7).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Mercedes C200 Cabriolet 2021</h3>
+                        <div class="product__details__rating">
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">2.799.000.000 VND</div>
+                        <p>Tại thị trường Việt Nam, số mẫu xe mui trần hạng sang trong tầm giá 3 tỷ đồng chỉ đếm trên đầu ngón tay, nhất là các thương hiệu xe Đức. Điều này khiến khách hàng có quá ít sự lựa chọn.
+                            <br>
+                            Do đó, ngay khi Mercedes-Benz Việt Nam trình làng C200 Cabriolet với mức giá bán khoảng 2.8 tỷ đồng, mẫu xe này lập tức thu hút được sự chú ý từ giới thượng lưu trong nước. </p>
+                        <ul>
+                            <li><b>Tải trọng</b> <span>500 kg</span></li>
+                            <li><b>Động Cơ</b> <span>Xăng I4 2.0L</span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios/30/000000/git.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe width="560" height="315" style="margin-top: 50px" src="https://www.youtube.com/embed/wEPU_rJPYDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                        aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                        aria-selected="false">Thông Tin Chi Tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                        aria-selected="false">Đánh Giá <span>(1)</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Ngoại Thất</h6>
+                            <p>Nhìn tổng thể, C200 Cabriolet 2021 là mẫu xe mui trần sở hữu vẻ ngoài hào nhoáng, sành điệu và sang trọng. Những đường nét thiết kế trên C200 Cabriolet rất mềm mại, uyển chuyển đặc trưng của Mercedes.</p>
+                            <img src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (2).jpg">
+                            <br><br>
+                            <p>C200 Cabriolet 2021 có kích thước tổng thể dài x rộng x cao lần lượt là 4686 x 1810 x 1409 mm. Khách hàng sẽ không mất thời gian để làm quen vẻ đẹp của C200 Cabriolet 2021 bởi phần đầu xe có thiết kế tương đồng với dòng C-Class sedan.</p>
+                            <p>Điển như bộ lưới tản nhiệt của C200 Cabriolet cấu trúc dạng kim cương kết hợp cùng logo ngôi sao ba cánh dạng 3D. Tạo hình này giống hệt chiếc C300 AMG 2021. Hai hốc hút gió bên dưới thì lại giống mẫu C200 2021 nhưng được mở rộng theo chiều dọc.</p>
+                            <p>Cụm đèn trước của Mercedes C200 Cabriolet 2021 có thiết kế mang hơi thở của dòng C-Class với đèn LED ban ngày chỉ có duy nhất một đường gân thanh mảnh. Đi kèm là cụm đèn pha Full-LED hiện đại cho hiệu năng chiếu sáng tối ưu.</p>
+                            <img src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (3).jpg">
+                            <br><br>
+                            <p>Ở phần hông, chi tiết đáng chú ý nhất chỉ có thể là phần mui xe. Điểm cộng lớn dành cho C200 Cabriolet khi sử dụng mui mềm bởi nó giúp cắt giảm trọng lượng và góp phần cải thiện khả năng tăng tốc.</p>
+                            <p>Phần mui xe có đến 4 màu sắc tuỳ chọn theo cá tính của chủ nhân, cụ thể gồm: Đen, Nâu, Đỏ và Xanh dương. Những đường gân dập nổi của C200 Cabriolet có thiết kế liền mạch hơn dòng C-Class sedan, bắt đầu từ cụm đèn trước và kết thúc ở tận đèn hậu.</p>
+                            <img src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (4).jpg">
+                            <br><br>
+                            <p>C200 Cabriolet sử dụng bộ vành đa chấu dạng tua bin máy bay có kích thước 18 inch vừa vặn. Đi kèm là bộ lốp run-flat giúp chiếc xe vẫn có thể lăn bánh thêm 80 km kể từ lúc bánh xe bị thủng. Nhờ đó, chủ nhân có thể tìm kiếm một chỗ sửa chữa gần nhất. </p>
+                            <p>Cụm đèn hậu LED của C200 Cabriolet có kiểu dáng thanh mảnh hình cán dao tương tự như dòng C-Class Coupe. Bên dưới là 2 ống xả hình oval mạ kim loại sáng bóng nằm đối xứng nhau. Hai bên đuôi xe còn có 2 khe hút gió giúp tăng cường tính khí động học. </p>
+                        <h6>Nội Thất</h6>
+                            <p><strong>Mec C200 Cabriolet</strong> có trục cơ sở dài 2840 mm. Tuy nhiên khác với dòng sedan, mọi sự thoải mái và rộng rãi sẽ được tập trung cho hàng ghế trước. Hàng ghế sau rất chật cùng khoảng trần rất thấp khi đóng mui, do đó vị trí này chỉ thích hợp cho trẻ em.</p>
+                            <img src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (5).jpg">
+                            <br><br>
+                            <p>Khu vực khoang lái của C200 Cabriolet có thiết kế tương tự như Mercedes C200 2021 bản tiêu chuẩn. Tuy nhiên màn hình cảm ứng của xe vẫn chưa được nâng cấp, chỉ có kích thước 7 inch với viền rất dày. Khu vực trung tâm được ốp gỗ line structure lime màu đen bóng mang đến cái nhìn sang trọng.</p>
+                            <p>Vô lăng đa chức năng 3 chấu bọc da của C200 Cabriolet mang phong cách thể thao với kiểu dáng đáy phẳng. Ngay phía sau là lẫy chuyển số giúp trải nghiệm tốc độ thêm phần phấn khích.</p>
+                            <p>Toàn bộ ghế ngồi trên đều được bọc da cao cấp với 3 tone màu gồm: Đen, Vàng Beige, Xám Crystal. Hàng ghế trước của xe có chức năng chỉnh điện đa hướng, bộ nhớ 3 vị trí và tính năng sưởi ấm. </p>
+                        <h6>Tiện Nghi</h6>
+                            <p><strong>C200 Cabriolet 2021</strong> được trang bị dàn điều hoà tự động 2 vùng độc lập cho khả năng làm mát ấn tượng, nhất là hàng ghế trước.</p>
+                            <img src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (6).jpg">
+                            <br><br>
+                            <ul>Hệ thống thông tin giải trí trên C200 Cabriolet 2021 hoàn toàn có thể đáp ứng những yêu cầu khắt khe từ người dùng. Xe có một số tính năng đáng chú ý như:
+                                <li>Màn hình cảm ứng 7 inch</li>
+                                <li>Kết nối Apple CarPlay, Android Auto, trình duyệt Internet, Bluetooth, các cổng kết nối đa phương tiện</li>
+                                <li>Dàn âm thanh Burmester 13 loa công suất 590W mang đến trải nghiệm đỉnh cao</li>
+                            </ul>
+                            <p>Ngoài, ra, xe còn có tính năng khởi động bằng nút bấm và chìa khoá thông minh.</p>
+                        <h6>Vận Hành</h6>
+                            <p>“Trái tim” của mẫu xe mui trần Mercedes C200 Cabriolet 2021 là khối động cơ Xăng I4 2.0L. Cỗ máy này có khả năng sản sinh công suất tối đa 184 mã lực, mô-men xoắn cực đại 300 Nm.</p>
+                            <img src="/img/img/mercedes c200 cabriolet/mercedes c200 cabriolet (7).jpg">  
+                            <br><br>
+                            <p>Đáng chú ý nhất là hộp số tự động 9 cấp 9G-Tronic được nâng cấp từ hộp số 7G-Tronic. So với hộp số 7G-Tronic, loại 9 cấp 9G-Tronic được bổ sung thêm 2 bánh răng giúp xe vẫn có thể vận hành mạnh mẽ và mượt mờ ở vòng tua thấp. </p>
+                            <p>Đi kèm là hệ dẫn động cầu sau cho phép C200 Cabriolet 2021 tăng tốc tốt hơn. Cụ thể, mẫu xe mui trần này có khả năng tăng tốc từ 0-100km/h trong 7.8 giây trước khi đạt tốc độ tối đa 235 km/h.</p>
+                            <p>Dù thành tính chưa thực sự quá ấn tượng nhưng C200 Cabriolet 2021 vẫn tự tin mang đến cho chủ nhân cảm giác hứng khởi khi ngồi sau vô lăng nhờ có 5 chế độ vận hành. Cụ thể gồm: Comfort, Eco, Sport, Sport+ và Individual.</p>
+                            <p>C200 Cabriolet 2021 dành được nhiều lời khen từ giới chuyên môn khi có khả năng tiết kiệm nhiên liệu đáng nể với mức tiêu hao nhiên liệu kết hợp đạt 6.3L/100Km.</p>
+                        <h6>An Toàn</h6>
+                            <ul>Mẫu xe mui trần của Mercedes Benz tại Việt Nam được trang bị hàng loạt các hệ thống an toàn tối tân để bảo vệ chủ nhân trong suốt cuộc hành trình. Cụ thể gồm có:
+                                <li>Hỗ trợ phòng ngừa va chạm và hỗ trợ phanh chủ động</li>
+                                <li>Hỗ trợ đỗ xe chủ động Active Parking Assist tích hợp ParkTronic</li>
+                                <li>Chức năng cảnh báo mất tập trung</li>
+                                <li>Túi khí phía trước, túi khí bên hông phía trước, túi khí trên đầu, túi khí đầu gối người lái</li>
+                                <li>Hệ thống chống bó cứng phanh ABS</li>
+                                <li>Hỗ trợ lực phanh</li>
+                                <li>Chống trượt khi tăng tốc</li>
+                                <li>Ổn định thân xe điện tử và hỗ trợ khi gió thổi ngang</li>
+                                <li>Hệ thống tránh hiện tượng thiếu lái khi vào cua ở tốc độ cao</li>
+                                <li>Hệ thống phanh Adaptive với chức năng hỗ trợ dừng xe (Hold)</li>
+                                <li>Hỗ trợ khởi hành ngang dốc</li>
+                                <li>Lốp xe Runflat</li>
+                            </ul>
+                        <h6>Kết Luận</h6>
+                            <p>Nhìn chung, C200 Cabriolet 2021 thực sự là một chiếc mui trần lý tưởng cho những khách hàng trẻ thành đạt, thích phô trương thân thế cùng mình . Với mức giá 2.8 tỷ động, bạn có thể sở hữu ngay một chiếc xe mui trần mang thương hiệu của Mercedes thay vì chọn dòng sedan.</p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Số Chi Tiết</h6>
+                        <table border="solid" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td><b>Tên xe</b></td>
+                                <td>Mercedes C200 Cabriolet 2021</td>
+                            </tr>
+                            <tr>
+                                <td><b>Số chỗ ngồi</b></td>
+                                <td>04 chỗ ngồi</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mui trần</b></td>
+                                <td>Mui trần</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kích thước tổng thể DxRxC (mm)</b></td>
+                                <td>4686 x 1810 x 1409 </td>
+                            </tr>
+                            <tr>
+                                <td><b>Chiều dài cơ sở (mm)</b></td>
+                                <td>2840</td>
+                            </tr>
+                            <tr>
+                                <td><b>Động cơ</b></td>
+                                <td>Xăng I4 2.0L</td>
+                            </tr>
+                            <tr>
+                                <td><b>Công suất tối đa (mã lực)</b></td>
+                                <td>184 mã lực</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mô men xoắn cực đại (Nm)</b></td>
+                                <td>300 Nm</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hộp số</b></td>
+                                <td>Tự động 9 cấp 9G-Tronic</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mô men xoắn cực đại (Nm)</b></td>
+                                <td>Cầu sau</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tăng tốc 0-100km/h</b></td>
+                                <td>7.8 giây</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tốc độ tối đa</b></td>
+                                <td>235 km/h</td>
+                            </tr>
+                            <tr>
+                                <td><b>Chế độ lái</b></td>
+                                <td>Comfort, Eco, Sport, Sport+ và Individual</td>
+                            </tr>
+                            <tr>
+                                <td><b>Cỡ mâm</b></td>
+                                <td>18 inch</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mức tiêu hao nhiên liệu trung bình (L/100km)</b></td>
+                                <td>6.3L/100Km</td>
+                            </tr>
+                            <tr>
+                                <td><b>Màu ngoại thất (8 màu)</b></td>
+                                <td>Trắng Polar, Đen Obsidian, Bạc Iridium, Bạc Diamond, Xám Selenite, Nâu Citrine, Xanh Cavansite, Xanh Brilliant. </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>

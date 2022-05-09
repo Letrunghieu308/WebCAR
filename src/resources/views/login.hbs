@@ -1,0 +1,209 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+ <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/login" style="margin-left: 10px; ">Login</a>
+        </li>
+      </ul>
+</nav>
+<style type="text/css">
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+     transition: "color 9999s ease-out, background-color 9999s ease-out";
+     transition-delay: 9999s;
+}
+    *{
+      margin: 0;
+      padding: 0;
+     
+    }
+   
+    .bgimg{
+      margin-top: 0.5em;
+      margin-bottom: -4rem;
+      height: 700px;
+      width: 100%;
+      background-image: url("/img/imgs/background.jpg");
+      background-position: center;
+      background-size: cover;
+      position:sticky;
+      
+    }
+    .card{
+      position: absolute; /* Canh giữa */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background:rgba(0, 0, 0, 0.7);
+    }   
+    .input-group-text{
+      
+      margin-left: -10px;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 0;
+      outline: none;
+      background: transparent;
+    }
+    .input-field{
+      padding: 10px 10px;
+      width: 89%;
+      border-left: 0; 
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 1px solid #727272; 
+      outline: none;
+      background: transparent;
+    }
+    ::placeholder { 
+      color: rgba(255, 255, 255, 0.767);
+      opacity: 1; 
+    }
+    input, select, textarea{
+      color: white;
+    }
+
+    textarea:focus, input:focus{
+      color: white;
+    }
+    select:hover{
+      background-color: rgba(255, 255, 255, 0.404);
+      color:white;
+    }
+    select:focus{
+      background-color: rgba(255, 255, 255, 0.404);
+      color:white;
+    }
+     h1 {position: relative; 
+  	margin: 0 -46px; 
+  	font-size: 40px; 
+  	background: #727272; 
+  	color: #FFFFFF; 
+  	text-shadow: 1px 1px 0px #1A5D6E; 
+  	box-shadow: 0 0 10px #AAA;
+  }
+
+  h1:before {content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: -25px; 
+  width: 0; 
+  height: 0; 
+  border-style:   solid; 
+  border-color: #353535 transparent;
+  border-width: 25px 0 0 25px; 
+  left: 0;
+  }
+  
+  h1::after {content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: -25px; 
+  width: 0; 
+  height: 0; 
+  border-style:   solid; 
+  border-color: #353535 transparent;
+  border-width:  25px 25px 0 0; 
+  right: 0;
+ }
+
+  </style>
+  
+     <div class="bgimg">
+         <!-- card -->
+    
+    <div class="card" >
+      <div class="card-body" >
+        <h1 class="text-center" style="color:white; font-size: 50px;">Welcome to ConCar</h1>
+        <br>
+        <form id="login" onsubmit="" action="" class="input-group">
+          <div class="input-group">
+            <span for="name" class="input-group-text" style="color:white; font-size: 20px; margin-right: 1px"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="50"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M106.41156,111.89406c-0.51063,-5.54969 -0.30906,-9.41969 -0.30906,-14.48563c2.51281,-1.31687 7.01438,-9.71531 7.76688,-16.81031c1.97531,-0.16125 5.09281,-2.08281 6.00656,-9.68844c0.48375,-4.085 -1.46469,-6.38281 -2.66062,-7.10844c3.21156,-9.66156 9.89,-39.56 -12.33563,-42.65062c-2.29781,-4.01781 -8.15656,-6.04688 -15.76219,-6.04688c-30.46281,0.56438 -34.13125,23.005 -27.45281,48.6975c-1.19594,0.72563 -3.14437,3.02344 -2.66062,7.10844c0.92719,7.60563 4.03125,9.52719 6.00656,9.68844c0.7525,7.095 5.42875,15.49344 7.955,16.81031c0,5.06594 0.18812,8.93594 -0.3225,14.48563c-6.02,16.20562 -46.68188,11.65031 -48.56313,42.90594h130.72c-1.88125,-31.25562 -42.36844,-26.70031 -48.38844,-42.90594z"></path></g></g></svg></span>
+            <input id="username" type="text" class="input-field" placeholder="Tên đăng nhâp">
+        </div>
+        <div class="input-group">
+            <span for="description" class="input-group-text" style="color:white; font-size: 20px; margin-right: 1px"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="50"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,10.32c-22.83031,0 -41.28,18.44969 -41.28,41.28v17.2h-13.76c-5.84531,0 -10.32,4.47469 -10.32,10.32v82.56c0,5.84531 4.47469,10.32 10.32,10.32h110.08c5.84531,0 10.32,-4.47469 10.32,-10.32v-82.56c0,-5.84531 -4.47469,-10.32 -10.32,-10.32h-13.76v-17.2c0,-22.83031 -18.44969,-41.28 -41.28,-41.28zM86,17.2c19.14844,0 34.4,15.25156 34.4,34.4v17.2h-68.8v-17.2c0,-19.14844 15.25156,-34.4 34.4,-34.4zM86,103.2c5.84531,0 10.32,4.47469 10.32,10.32c0,3.09063 -1.37062,5.805 -3.44,7.525v9.675c0,3.78938 -3.09062,6.88 -6.88,6.88c-3.78937,0 -6.88,-3.09062 -6.88,-6.88v-9.675c-2.06937,-1.72 -3.44,-4.43437 -3.44,-7.525c0,-5.84531 4.47469,-10.32 10.32,-10.32z"></path></g></g></svg></span>
+            <input id="password" type="password" class="input-field" placeholder="Mật khẩu">
+        </div>
+          
+            <button id="login-btn " type="submit" class="submit-button btn btn-outline-light m-2 " onclick="login()" style="width:250px">Đăng nhập</button>
+              <a class="rounded float-end btn btn-outline-light m-2"  href="/" role="button" style="width:250px">Hủy</a>
+          
+              
+            
+            
+            
+        </form>
+      </div>
+    </div>
+        <!-- card -->
+     </div>
+  
+
+<script>
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+    }
+    function login()
+    {
+        $.ajax({
+            url:'/login',
+            type:'POST',
+            data:{
+                username: $('#username').val(),
+                password : $('#password').val(),
+            }
+        })
+        .then( data =>{
+            setCookie('token',data.token, 1)
+            window.location.href="/admin"
+        })
+        .catch(err =>{
+            console.log(err)
+        })
+    }
+  
+</script>

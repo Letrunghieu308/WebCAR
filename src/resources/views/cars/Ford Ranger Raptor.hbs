@@ -1,0 +1,333 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+
+    <section class="breadcrumb-section set-bg" data-setbg="/img/imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="/">Home</a>
+                            <a href="/me/stored/courese">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="/img/ava/ford Ranger (truoc).png" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="/img/ava/ford Ranger (truoc).png"
+                                src="/img/ava/ford Ranger (truoc).png" alt="">
+                            <img data-imgbigurl="/img/img/ford ranger/ford Ranger (1).jpg"
+                                src="/img/img/ford ranger/ford Ranger (1).jpg" alt="">
+                            <img data-imgbigurl="/img/img/ford ranger/ford Ranger (2).jpg"
+                                src="/img/img/ford ranger/ford Ranger (2).jpg" alt="">
+                            <img data-imgbigurl="/img/img/ford ranger/ford Ranger (3).jpg"
+                                src="/img/img/ford ranger/ford Ranger (3).jpg" alt="">
+                            <img data-imgbigurl="/img/img/ford ranger/ford Ranger (5).jpg"
+                                src="/img/img/ford ranger/ford Ranger (5).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Ford Ranger Raptor</h3>
+                        <div class="product__details__rating">
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">1.202.000.000 VND</div>
+                        <p>
+                            Kế thừa từ Ford Ranger, Ranger Raptor được trang bị bộ khung từ thép siêu cường, tấm chắn gầm chắc khỏe và rộng, thiết kế cải tiến để sẵn sàng chinh phục những cung đường mà các dòng bán tải khác không dám đương đầu.
+                        </p>
+                        <ul>
+                            <li><b>Trọng lượng toàn tải</b> <span>2970 kg</span></li>
+                            <li><b>Động Cơ</b> <span>Diesel 2.0L Bi-Turbo I4</span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios/30/000000/git.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe width="560" height="315" style="margin-top:50px" src="https://www.youtube.com/embed/8H6WAU0Dgt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                        aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                        aria-selected="false">Thông Tin Chi Tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                        aria-selected="false">Đánh Giá <span>(1)</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Ngoại Thất</h6>
+                            <p>
+                                Một trong những nét đặc trưng của Ford Raptor chính là bộ lưới tản nhiệt gắn chữ FORD rất lớn phía trước, hông xe vồng lên chắc chắn, cản trước sau bắt vào khung càng tôn thêm vóc dáng mạnh mẽ. Đèn sương mù công nghệ LED cùng khe dẫn khí làm mát hai bên tăng thêm kiểu dáng khí động học. Thùng hàng phía sau xe được nhấn mạnh bởi cản sau và logo Ford nổi 3D.
+                            </p> 
+                            <br>
+                            <p>Nhìn từ trực diện, khách hàng có thể nhận ra ngay F-150 Limited khi dòng chữ “LIMITED” nằm chễm chệ ở phần nắp capo gân guốc.</p>
+                            <img src="/img/img/ford ranger/ford Ranger (1).jpg">
+                            <img src="/img/img/ford ranger/ford Ranger (2).jpg" alt="">
+                            <br>
+                        <h6>Nội Thất</h6>
+                            <img src="/img/img/ford ranger/ford Ranger (3).jpg" alt="">
+                            <p>
+                                Khoang lái tiện nghi
+Chỉ việc bấm nút Mode trên vô lăng để chọn chế độ vận hành. Ghế thể thao ôm sát người ngồi, với gối tựa đầu Raptor độc đáo, tạo tư thế rất thoải mái khi lái xe trên địa hình off-road. Có thể thấy đường chỉ khâu đặc trưng của Ranger Raptor được thể hiện tinh xảo trên vô lăng, tấm phủ bên trên bảng điều khiển, tay cầm cần số bằng da và thảm trải sàn. Màn hình hiển thị đa thông tin cung cấp đầy đủ các thông số vận hành của xe cho người lái, rất dễ theo dõi mà không làm chói mắt.
+                            </p>
+                        <h6>Tiện nghi</h6>
+                        <h5>SYNC™ 31</h5>
+                            <p>
+                                SYNC™ 3 giúp bạn kết nối, giải trí mà vẫn luôn tập trung trên lộ trình. Hệ thống này sử dụng tới hơn 10.000 câu lệnh để thực hiện cuộc gọi, nghe nhạc, và điều chỉnh nhiệt độ trong khoang xe. Màn hình cảm ứng 8-inch dễ sử dụng hơn trước, tích hợp chức năng cảm ứng vuốt và phóng to.
+Apple CarPlay2 và Android Auto3 có thể kết nối trực tiếp với SYNC™3, do vậy bạn có thể vừa lái xe vừa thoải mái truy cập những ứng dụng
+di động yêu thích của mình.
+
+Ford AppLink®4 có thể giúp bạn mở và điều khiển bằng giọng nói một số ứng dụng di động yêu thích của mình, hoặc truy cập các ứng dụng này theo nhóm vốn được kết nối tự động từ chiếc điện thoại thông minh của bạn khi kết nối và ghép đôi với hệ thống SYNC® của xe.
+                            </p>
+                        <h5>Vô lăng thiết kế đặc biệt</h5>
+                            <p>
+                                Vành vô-lăng với đường chỉ màu vừa vặn trong lòng tay giúp người lái kiểm soát xe tốt hơn. Chính giữa đỉnh vô lăng được đánh dấu màu đỏ giúp bạn theo dõi hướng xoay của lốp khi đánh vô-lăng hoặc ôm cua.
+                            </p>
+                            <img src="/img/img/ford ranger/ford Ranger (4).jpg" alt="">
+                        <h6>Thông số kỹ thuật</h6>
+                        <img src="/img/img/ford ranger/ford Ranger (5).jpg" alt="">
+                        <p>
+                            <b>Khoảng sáng gầm xe 230mm</b><br>
+                            Ranger Raptor có khả năng vô hiệu hóa mọi chướng ngại vật khi chiếc xe đi qua nhờ khoảng sáng gầm xe tới 230mm.
+                        </p>
+                        <p>
+                            <b>Khả năng Lội nước Vô địch</b><br>
+                            Khả năng lội nước của Ranger Raptor tuyệt vời với 850mm giúp xe có thể vượt sông một cách nhẹ nhàng, trong khi tư thế ngồi cao giúp bạn quan sát xung quanh tốt hơn.
+                        </p>
+                        <p>
+                            <b>Độ cứng của khung</b><br>
+                            Hệ thống khung gầm của Ranger được cải tiến vững chắc hơn cho phiên bản Ranger Raptor khi sử dụng thép siêu cứng. Tấm chắn gầm rộng gấp đôi so với chắn gầm của Ranger, được làm bằng thép siêu cứng dày 2.3mm để chịu đựng được những cú va đập khi đi offroad. Toàn bộ hệ thống khung được gia cường để chống lại những va đập mạnh từ ngoại cảnh. Các thanh dầm cứng hai bên sườn có thể hấp thụ các cú va đập lên tới 1G.
+                        </p>
+                        <img src="/img/img/ford ranger/ford Ranger (6).jpg" alt="">
+                        <p>
+                            <b>Động cơ Bi-Turbo 2.0L với hộp số tự động 10 cấp.</b><br>
+                            Không chỉ là sự kết hợp công nghệ động cơ hiện đại nhất của Ford, Ranger Raptor thiết lập chuẩn mực mới về tính năng vận hành. Động cơ 2.0L Bi-Turbo tiên tiến kết hợp với hộp số tự động 10 cấp cho công suất tối ưu nhất, sức kéo lớn nhất, giúp cải thiện khả năng tăng tốc và chuyển số nhanh hơn, chính xác hơn.
+                        </p>
+                        <img src="/img/img/ford ranger/ford Ranger (7).jpg" alt="">
+                        <img src="/img/img/ford ranger/ford Ranger (8).jpg" alt="">
+                        <p>
+                            <b>Hệ thống Kiểm soát Đường Địa hình (TMS) với chế độ Baja.</b><br>
+                            Hệ thống Kiểm soát Đường Địa hình công nghệ tiên tiến nhất với 6 chế độ hoạt động, giúp bạn chinh phục mọi địa hình chỉ bằng một động tác vặn núm xoay. Chế độ Baja, được đặt tên theo cảm hứng từ giải đua Baja 1000 Desert Race, sẽ tối ưu độ bám, cải thiện độ nhạy và tốc độ chuyển số, giúp Ranger Raptor tận dụng tối đa khả năng chạy tốc độ cao trên sa mạc.
+                        </p>
+                        <img src="/img/img/ford ranger/ford Ranger (9).jpg" alt="">
+                        <p>
+                            <b>Hệ thống treo thiết kế dành cho xe đua</b><br>
+                            Hệ thống treo của Ranger Raptor được tính toán sao cho có thể thích ứng với những địa hình khó khăn nhất ở tốc độ cao nhất. Giảm xóc hiệu FOX Racing Shocks 2.5-inch là trang bị tiêu chuẩn trên Raptor, tăng 30% độ nhún so với giảm xóc trên các phiên bản khác của Ranger.
+                        </p>
+                        <img src="/img/img/ford ranger/ford Ranger (10).jpg" alt="">
+                        <p>
+                            <b>Bộ lốp địa hình chuyên dụng</b><br>
+                            Bộ lốp đa địa hình chuyên dụng 33-inch là trang bị tiêu chuẩn, với gai lốp được thiết kế tối ưu, cho tuổi thọ cao và thành lốp bền chắc
+                        </p>
+                        <img src="/img/img/ford ranger/ford Ranger (11).jpg" alt="">
+                        <p>
+                            <b>Lẫy chuyển số</b><br>
+                            Lẫy chuyển số làm bằng hợp kim ma-giê cao cấp được tích hợp trên vô-lăng bọc da cho phép người lái chuyển số nhanh mà không phải rời tay khỏi vô-lăng.
+                        </p>
+                        <img src="/img/img/ford ranger/ford Ranger (12).jpg" alt="">
+                        <p>
+                            <b>Khả năng Kiểm soát</b><br>
+                            Hệ thống Cân bằng Điện tử toàn diện trên Ranger Raptor được thiết kế giúp bạn duy trì khả năng kiểm soát khi lái xe trên những điều kiện địa hình offroad phức tạp và cả ngay cả khi tải nặng.
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Số Chi Tiết</h6>
+                        <table border="solid" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td><b>Tên xe</b></td>
+                                <td>Ford Ranger Raptor</td>
+                            </tr>
+                            <tr>
+                                <td><b>Số chổ ngồi</b></td>
+                                <td>05</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kiểu xe</b></td>
+                                <td>Bán tải</td>
+                            </tr>
+                            <tr>
+                                <td><b>Xuất xứ</b></td>
+                                <td>Nhập khẩu Thái Lan</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kích thước tổng thể DxRxC (mm)</b></td>
+                                <td>5693 x 1873 x 2028 mm</td>
+                            </tr>
+                            <tr>
+                                <td><b>Chiều dài cơ sở</b></td>
+                                <td>3220 mm</td>
+                            </tr>
+                            <tr>
+                                <td><b>Động cơ</b></td>
+                                <td>Diesel Bi-Turbo 2.0L i4 TDCi</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dung tích công tác</b></td>
+                                <td>1,996cc</td>
+                            </tr>
+                            <tr>
+                                <td><b>Loại nhiên liệu</b></td>
+                                <td>Máy dầu</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dung tích bình nhiên liệu</b></td>
+                                <td>80L</td>
+                            </tr>
+                            <tr>
+                                <td><b>Công suất tối đa (hp)</b></td>
+                                <td>210 mã lực tại 3750 vòng/phút</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mô men xoắn cực đại (Nm)</b></td>
+                                <td>500 Nm tại 1750-2000 vòng/phút</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hộp số</b></td>
+                                <td>Tự động 10 cấp</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hệ dẫn động</b></td>
+                                <td>2 cầu</td>
+                            </tr>
+                            <tr>
+                                <td><b>Treo trước/sau</b></td>
+                                <td>Độc lập, lo xo trụ và ống giảm chấn/ống giảm xóc thể thao</td>
+                            </tr>
+                            <tr>
+                                <td><b>Phanh trước/sau</b></td>
+                                <td>Đĩa</td>
+                            </tr>
+                            <tr>
+                                <td><b>Trợ lực lái</b></td>
+                                <td>Điện</td>
+                            </tr>
+                            <tr>
+                                <td><b>Cỡ mâm</b></td>
+                                <td>17mm</td>
+                            </tr>
+                            <tr>
+                                <td><b>Khoảng sáng gầm xe</b></td>
+                                <td>230mm</td>
+                            </tr>
+                            <tr>
+                                <td><b>Khả năng lội nước</b></td>
+                                <td>850mm</td>
+                            </tr>
+                        </table>
+                        <p>Giá xe: 1,202,000,000đ (chưa bao gồm các loại thuế, phí)</p>
+                            
+                            
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>Bỉ đã trả giá cho trận thắng 1-0 trước Bồ Đào Nha ở vòng 1/8 EURO 2021 khi mà cả De Bruyne và Eden Hazard dính chấn thương.
+                            De Bruyne dính chấn thương ở đầu hiệp 2 và phải rời sân nhường chỗ cho Mertens. Tiền vệ của Man City bị chấn thương mắt cá chân sau pha phạm lỗi của Joao Palhinha. Trong khi đó, Hazard gặp vấn đề về gân khoeo và phải rời sân ở cuối trận.
+                            “Chúng tôi cần 48 giờ để biết được mức độ chấn thương của Hazard và De Bruyne. 
+                            De Bruyne bị chấn thương mắt cá chân. Cậu ấy đã phải nhận một cú vào bóng quá mạnh từ đối thủ. Hazard thì gặp vấn đề về cơ bắp. 
+                            Chúng tôi sẽ quay trở lại Bỉ tối nay và sẽ có kết quả chẩn đoán vào ngày mai”, 
+                            HLV của tuyển Bỉ, Roberto Martinez phát biểu.Bỉ đã trả giá cho trận thắng 1-0 trước Bồ Đào Nha ở vòng 1/8 EURO 2021 khi mà cả De Bruyne và Eden Hazard dính chấn thương. De Bruyne dính chấn thương ở đầu hiệp 2 và phải rời sân nhường chỗ cho Mertens. Tiền vệ của Man City bị chấn thương
+                            mắt cá chân sau pha phạm lỗi của Joao Palhinha. Trong khi đó, Hazard gặp vấn đề về gân khoeo và phải rời sân ở cuối trận.
+                            “Chúng tôi cần 48 giờ để biết được mức độ chấn thương của Hazard và De Bruyne. 
+                            De Bruyne bị chấn thương mắt cá chân. Cậu ấy đã phải nhận một cú vào bóng quá mạnh từ đối thủ. Hazard thì gặp vấn đề về cơ bắp. Chúng tôi sẽ quay trở lại Bỉ tối nay và sẽ có kết quả chẩn đoán vào ngày mai”,
+                            HLV của tuyển Bỉ, Roberto Martinez phát biểu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>

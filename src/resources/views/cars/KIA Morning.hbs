@@ -1,0 +1,423 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin">CONCAR.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/me/about">Liên hệ</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cài đặt chi tiết
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Tạo mục mới</a></li>
+            <li><a class="dropdown-item" href="/me/stored/courese">Quản lý</a></li>
+            <li><a class="dropdown-item" href="/chatroom/message">Tin nhắn</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout" onclick="logout()">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quản lý nhân viên
+          </a>
+          <ul class="dropdown-menu ml-auto" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/users/create">Đăng kí tài khoản</a></li>
+            <li><a class="dropdown-item" href="/users/stored">Quản lý tài khoản</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <div class="mt-4 mb-4 ">
+   <div class="d-flex" style="width:300px">
+        <input class="form-control me-2" id="search-by-name" type="search" placeholder="Search" aria-label="Search">
+        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" class="btn btn-outline-secondary my-2 my-sm-0 bg-light" onclick="doSearch()">
+      </div>
+ </div>
+</nav>
+
+    <section class="breadcrumb-section set-bg" data-setbg="/img/imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="/">Home</a>
+                            <a href="/me/stored/courese">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="/img/img/kia morning/kia morning (1).jpg" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (1).jpg"
+                                src="/img/img/kia morning/kia morning (1).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (2).jpg"
+                                src="/img/img/kia morning/kia morning (2).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (3).jpg"
+                                src="/img/img/kia morning/kia morning (3).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (4).jpg"
+                                src="/img/img/kia morning/kia morning (4).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (5).jpg"
+                                src="/img/img/kia morning/kia morning (5).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (6).jpg"
+                                src="/img/img/kia morning/kia morning (6).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (7).jpg"
+                                src="/img/img/kia morning/kia morning (7).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (8).jpg"
+                                src="/img/img/kia morning/kia morning (8).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (9).jpg"
+                                src="/img/img/kia morning/kia morning (9).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (10).jpg"
+                                src="/img/img/kia morning/kia morning (10).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (11).jpg"
+                                src="/img/img/kia morning/kia morning (11).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (12).jpg"
+                                src="/img/img/kia morning/kia morning (12).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (13).jpg"
+                                src="/img/img/kia morning/kia morning (13).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (14).jpg"
+                                src="/img/img/kia morning/kia morning (14).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (15).jpg"
+                                src="/img/img/kia morning/kia morning (15).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (16).jpg"
+                                src="/img/img/kia morning/kia morning (16).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (17).jpg"
+                                src="/img/img/kia morning/kia morning (17).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (18).jpg"
+                                src="/img/img/kia morning/kia morning (18).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (19).jpg"
+                                src="/img/img/kia morning/kia morning (19).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (20).jpg"
+                                src="/img/img/kia morning/kia morning (20).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (21).jpg"
+                                src="/img/img/kia morning/kia morning (21).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (22).jpg"
+                                src="/img/img/kia morning/kia morning (22).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (23).jpg"
+                                src="/img/img/kia morning/kia morning (23).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (24).jpg"
+                                src="/img/img/kia morning/kia morning (24).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (25).jpg"
+                                src="/img/img/kia morning/kia morning (25).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (26).jpg"
+                                src="/img/img/kia morning/kia morning (26).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (27).jpg"
+                                src="/img/img/kia morning/kia morning (27).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (28).jpg"
+                                src="/img/img/kia morning/kia morning (28).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (29).jpg"
+                                src="/img/img/kia morning/kia morning (29).jpg" alt="">
+                            <img data-imgbigurl="/img/img/kia morning/kia morning (30).jpg"
+                                src="/img/img/kia morning/kia morning (30).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Kia Morning</h3>
+                        <div class="product__details__rating">
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <img src="https://img.icons8.com/emoji/24/000000/star-emoji.png"/>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">439.000.000 VND</div>
+                        <p>Đúng như dự đoán, THACO đã cho ra mắt Kia Morning thế hệ mới thứ tư, lược bỏ thế hệ thứ ba tương tự như với Kia Sorento. New Morning 2021 có sự “lột xác” mạnh mẽ từ ngoại hình đến nội thất, nhận được rất nhiều đánh giá tích cực từ người dùng.</p>
+                        <ul>
+                            <li><b>Tải trọng</b> <span>400 kg</span></li>
+                            <li><b>Động Cơ</b> <span>Xăng, 1.25L - 83 Hp</span>
+                            <span></span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <div>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"/>
+                                        </a>
+                                        <a href="" class="me-4 text-reset">
+                                        <img src="https://img.icons8.com/ios/30/000000/git.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe width="560" height="315" style="margin-top: 50px" src="https://www.youtube.com/embed/KwQSHxIqgfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                        aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                        aria-selected="false">Thông Tin Chi Tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                        aria-selected="false">Đánh Giá <span>(1)</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Ngoại Thất</h6>
+                            <p>Ở thế hệ mới, Kia Morning 2021 sở hữu một diện mạo mới mẻ, sắc nét và cứng cáp hơn. Xe có bản GT-Line hướng đến phong cách trẻ trung, thể thao và bản X-Line hướng đến phong cách off-road hầm hố. Sự thay đổi này càng giúp Kia Morning nổi bật hơn khi đứng cạnh các đối thủ cùng phân khúc.</p>
+                            <img src="/img/img/kia morning/kia morning (1).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 GT-Line hướng đến phong cách trẻ trung thể thao</p>
+                            <img src="/img/img/kia morning/kia morning (2).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 X-Line hướng đến phong cách off-road hầm hố</p>
+                            
+                            <p>Đầu xe Kia Morning 2021 gần như được đổi mới hoàn toàn, sở hữu nhiều điểm nhấn ấn tượng.</p>
+                            <p>Lưới tản nhiệt trên Morning 2021 vẫn kiểu mũi hổ đặc trưng. Nhưng sang thế hệ thứ 4 sắc cạnh hơn khi được bóp gọn, kéo dài kết nối liền mạch với cụm đèn trước. Bên trong sơn đen. Phần viền chrome bóng bên ngoài ở thế hệ cũ được chuyển sang mạ bạc thêm phay tinh xảo, trông cao cấp hơn. Riêng bản GT-Line có thêm đường chỉ đỏ nổi bật.</p>
+                            <img src="/img/img/kia morning/kia morning (3).jpg">
+                            <br><br>
+                            <p>Lưới tản nhiệt trên Kia Morning 2021 sắc cạnh hơn</p>
+                            <img src="/img/img/kia morning/kia morning (4).jpg">
+                            <br><br>
+                            <p>Phiên bản Morning 2021 GT-Line có thêm đường chỉ đỏ nổi bật</p>
+                            <p>Cụm đèn trước Kia Morning 2021 mới mẻ và thần thái hơn. Cả hai phiên bản Morning GT-Line và X-Line vẫn chỉ trang bị đèn Halogen Projector tích hợp tính năng bật/tắt tự động như bản Luxury ở “người tiền nhiệm”. Tuy nhiên, dải đèn định vị LED ban ngày được tái thiết kế hình chữ X độc đáo, khá giống “đàn anh” Kia Cerato. Đèn xi nhan kiểu dải dài nhiều khối LED rất đẹp.</p>
+                            <img src="/img/img/kia morning/kia morning (5).jpg">
+                            <br><br>
+                            <p>Cụm đèn trước trên Kia Morning 2021 được làm mới thần thái hơn</p>
+                            <p>Điểm thu hút nhất ở đầu xe New Morning có lẽ là phần lưới tản nhiệt bên dưới. Phần tản nhiệt tích hợp chung với hốc gió mở to hình lục giác. Bên trong có lưới nổi 3D. Toàn bộ được sơn đen rất “cool”. Đèn sương mù Halogen Projector cũng được bố trí nằm lọt lòng bên trong ở hai góc dưới.</p>
+                            <img src="/img/img/kia morning/kia morning (6).jpg">
+                            <br><br>
+                            <p>Ở dưới, lưới tản nhiệt tích hợp chung với hốc gió mở to hình lục giác, có đèn sương mù Halogen Projector lọt lòng bên trong</p>
+                            <p>Thiết kế cản trước ở bản Morning GT-Line và X-Line có sự khác biệt lớn. Ở bản GT-Line, hốc gió kéo dài gần như chiếm hết cản trước. Hai má bên khoét sâu thêm ốp nhựa đen tạo điểm nhấn.</p>
+                            <img src="/img/img/kia morning/kia morning (7).jpg">
+                            <br><br>
+                            <p>Kia Morning GT-Line có hốc gió kéo dài gần như chiếm hết cản trước</p>
+                            <p>Ở bản X-Line, hốc gió mở rộng sang cả hai bên. Cản dưới được mạ bạc, thiết kế hầm hố.</p>
+                            <img src="/img/img/kia morning/kia morning (8).jpg">
+                            <br><br>
+                            <p>Kia Morning X-Line có hốc gió mở rộng sang hai bên, cản trước to và hầm hố</p>
+                            <p>Thân xe Kia Morning 2021 thu hút với không ít điểm mới. Trụ B sơn đen. Phần kính sau thu gọn tạo hiệu ứng thân xe dài và thể thao hơn so với “người tiền nhiệm”. Đường dập gân nổi trên thân xe thay vì chạy xuyên qua tay nắm cửa như trước thì nay được nâng lên cao hơn.</p>
+
+                            <img src="/img/img/kia morning/kia morning (9).jpg">
+                            <br><br>
+                            <p>Thân xe Kia Morning 2021 đổi mới tạo hiệu ứng thân xe dài và thể thao hơn</p>
+                            <p>Phần thân dưới có sự khác biệt giữa bản Morning GT-Line và X-Line. Trên bản GT-Line, cạnh dưới thân xe có ốp nhựa cùng màu xe, thêm nẹp nhựa đỏ trang trí. Trên bản X-Line, vòm bánh xe và cạnh dưới thân xe đều ốp nhựa đen, phần trên có thêm nẹp nhựa cho cảm giác thể thao hơn.</p>
+                            <img src="/img/img/kia morning/kia morning (9).jpg">
+                            <br><br>
+                            <p>Kia Morning GT-Line có nẹp nhựa đỏ trang trí</p>
+                            <img src="/img/img/kia morning/kia morning (10).jpg">
+                            <br><br>
+                            <p>Kia Morning X-Line có vòm bánh xe và cạnh dưới thân xe ốp nhựa đen</p>
+                            <p>Gương chiếu hậu Kia Morning 2021 cùng màu thân xe, tích hợp đầy đủ các tính năng gương chỉnh điện, gập điện, đèn báo rẽ và đặc biệt có cả sấy gương.</p>
+                            <p>Kia Morning 2021 sử dụng mâm xe 15 inch 8 chấu ở cả 2 phiên bản GT-Line và X-Line.</p>
+                            <img src="/img/img/kia morning/kia morning (11).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 sử dụng mâm xe 15 inch 8 chấu</p>
+                            <p>Đuôi Kia Morning 2021 trông “phình” hơn, cho cảm giác bề thế hơn so với “người tiền nhiệm”. Phần dưới sử dụng nhiều chi tiết cắt vát bắt mắt. Điểm hấp dẫn nhất là cụm đèn hậu hoàn toàn mới với đồ hoạ gồm nhiều sợi LED tạo thành hình chữ C sắc sảo và hiện đại.</p>
+                            <img src="/img/img/kia morning/kia morning (12).jpg">
+                            <br><br>
+                            <p>Đuôi Kia Morning 2021 trông “phình” hơn, cho cảm giác bề thế hơn trước</p>
+                            <img src="/img/img/kia morning/kia morning (13).jpg">
+                            <br><br>
+                            <p>Cụm đèn hậu Morning 2021 mới với đồ hoạ gồm nhiều sợi LED tạo thành hình chữ C rất sắc sảo</p>
+                            <p>Cản sau Morning 2021 cũng được thiết kế rất cầu kỳ. Ở bản GT-Line, cản sau sơn đen bóng, có đường viền đỏ. Rất thú vị là bên dưới có cả khe khuếch tán gió và chụp ống xả kép mạ chrome tăng thêm phần mạnh mẽ.</p>
+                            <img src="/img/img/kia morning/kia morning (14).jpg">
+                            <br><br>
+                            <p>Cản sau Morning 2021 GT-Line sơn đen bóng, có chụp ống xả kép mạ chrome</p>
+                            <p>Ở bản X-Line, cản sau to với ốp mạ bạc viền nhựa bọc ngoài cho cảm giác cứng cáp và hầm hố hơn. X-Line cũng có chụp ống xả kép nhưng còn to hơn bản GT-Line. Tuy đây chỉ là chi tiết mang tính trang trí song chắc chắn sẽ khiến không ít người dùng thích thú.</p>
+                            <img src="/img/img/kia morning/kia morning (15).jpg">
+                            <br><br>
+                            <p>Cản sau Morning 2021 X-Line to hơn với ốp mạ bạc, có chụp ống xả kép</p>
+                            <h6>Nội Thất</h6> 
+                            <p>Ở thế hệ thứ 4, New Morning không chỉ đổi mới về ngoại hình, còn “lột xác” cả ở phần nội thất. Không còn một khoang cabin “đặc sệt” vẻ đơn điệu thường thấy ở các mẫu xe cỡ nhỏ giá rẻ, sau màn “biến hình” Morning 2021 trở nên hiện đại hơn, thời trang hơn. Nhiều người đã phải trầm trồ trước sự đầu tư, chăm chút của hãng xe Hàn lần này.</p>
+                            <p>Ghế ngồi các phiên bản Kia Morning 2021 đều được bọc da. Tuy nhiên khác với thế hệ cũ, Morning mới có phần da bọc ghế đục lỗ theo hoa văn chìm cầu kỳ. Ở bản GT-Line, ghế màu đen phối viền đỏ. Bản X-Line, ghế màu màu đen phối viền trắng.</p>
+                            <img src="/img/img/kia morning/kia morning (16).jpg">
+                            <br><br>
+                            <p>Ghế bản Kia Morning 2021 GT-Line màu đen phối viền đỏ</p>
+                            <img src="/img/img/kia morning/kia morning (17).jpg">
+                            <p>Ghế bản Kia Morning 2021 X-Line màu đen phối viền trắng</p>
+                            <p>Hàng ghế trước Morning 2021 được tạo hình khá thể thao. Ghế lái vẫn chỉnh cơ 6 hướng, ghế phụ chỉnh 4 hướng. Nhưng có một điểm đáng khen là Morning thế hệ mới được trang bị thêm bệ để tay giúp ích rất nhiều cho người lái khi chạy xe đường xa.</p>
+                            <img src="/img/img/kia morning/kia morning (18).jpg">
+                            <br><br>
+                            <p>Hàng ghế trước Kia Morning 2021 được tạo hình khá thể thao</p>
+                            <img src="/img/img/kia morning/kia morning (19).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 có bệ để tay trung tâm cho hàng ghế trước</p>
+                            <p>Hàng ghế sau Morning 2021 đã có đủ tựa đầu 3 vị trí. Tuy nhiên, không gian nhìn chung vẫn chỉ ở mức đủ dùng như “người tiền nhiệm”. Khoảng trống để chân vừa đủ. Trần xe hơi kém thoáng. So sánh với các đối thủ cùng phân khúc, hàng ghế sau Morning rộng ngang với VinFast Fadil, không rộng rãi bằng Hyundai i10, Toyota Wigo hay Honda Brio.</p>
+                            <img src="/img/img/kia morning/kia morning (20).jpg">
+                            <br><br>
+                            <p>Hàng ghế sau Morning 2021 đã có đủ tựa đầu 3 vị trí, không gian ở mức đủ dùng</p>
+                            <p>Khoang hành lý Kia Morning 2021 rộng hơn trước với dung tích 225 lít, đủ dùng cho các nhu cầu thông thường. Có thể mở rộng nâng lên 1.010 lít nếu gập hàng ghế thứ 2.</p>
+                            <img src="/img/img/kia morning/kia morning (21).jpg">
+                            <br><br>
+                            <p>Khoang hành lý Kia Morning 2021 rộng hơn với dung tích 225 lít</p>
+                            <p>Khu vực lái Kia Morning 2021 thay đổi một cách ấn tượng. New Morning sử dụng nguyên mẫu vô lăng của “đàn anh” Kia Soluto. Vô lăng kiểu 3 chấu thể thao, được bọc da, chạy chỉ màu trang trí nổi bật. Trên vô lăng tích hợp đầy đủ các phím chức năng cần thiết.</p>
+                            <img src="/img/img/kia morning/kia morning (22).jpg">
+                            <br><br>
+                            <p>Vô lăng Morning 2021 kiểu 3 chấu thể thao, được bọc da, chạy chỉ màu trang trí nổi bật</p>
+                            <p>Cụm đồng hồ sau vô lăng Morning 2021 cũng hoàn toàn mới, giống với Kia Soluto. Nhưng nếu “đàn anh” Soluto chỉ dừng lại ở màn hình hiển thị đa thông tin đơn sắc 2.8 inch thì Morning dùng màn hình màu đến 4.2 inch cho giao diện tổng thể trực quan hơn. Các phiên bản Morning 2021 đều có chìa khoá thông minh và khởi động nút bấm.</p>
+                            <img src="/img/img/kia morning/kia morning (23).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 có màn hình màu đến 4.2 inch</p>
+                            <p>Khu vực bảng taplo có lẽ là nơi hấp dẫn nhất trong lần “lột xác” này. Khi nhìn vào taplo Kia Morning 2021, người ta sẽ không nghĩ rằng đây là một mẫu xe cỡ nhỏ hạng A.</p>
+                            <img src="/img/img/kia morning/kia morning (24).jpg">
+                            <br><br>
+                            <p>Thiết kế taplo Kia Morning 2021 “lột xác” hiện đại và cao cấp hơn</p>
+                            <p>Taplo Kia Morning 2021 nổi bật với màn hình trung tâm kiểu dựng nổi rất công nghệ, thừa hưởng từ “đàn anh” hạng C – Kia Cerato. Bảng điều khiển điều hoà thiết kế hiện đại, gãy gọn. Các ổ cắm và ngăn để cốc sắp xếp khoa học. Cửa gió điều hoà còn trở thành một điểm nhấn trang trí nổi bật với kiểu dáng thon dài độc đáo.</p>
+                            <img src="/img/img/kia morning/kia morning (25).jpg">
+                            <br><br>
+                            <p>Bảng điều khiển điều hoà Kia Morning 2021 có thiết kế hiện đại, gãy gọn</p>
+                            <p>Phần nhựa xám trước đây được đổi sang màu đen, dù vẫn là nhựa cứng dạng hạt giả da nhưng cũng đã cho cảm giác tốt hơn. Khi kết hợp thêm các chi tiết trang trí mạ bạc và nhựa sơn bóng, tổng thể nội thất New Morning trông sang trọng và cao cấp hơn trước khá nhiều.</p>
+                            <p>Ốp cửa Morning 2021 một lần nữa cho thấy sự đầu tư bài bản của hãng xe Kia khi có sự kết hợp tinh tế giữa màu sắc và vật liệu trang trí. Khu vực cần số cũng được làm mới cầu kỳ hơn.</p>
+                            <img src="/img/img/kia morning/kia morning (26).jpg">
+                            <br><br>
+                            <p>Cửa Kia Morning GT-Line được trang trí ốp nhựa đen phối đỏ</p>
+                            <img src="/img/img/kia morning/kia morning (27).jpg">
+                            <br><br>
+                            <p>Cửa Kia Morning X-Line được trang trí ốp mạ bạc phối màu</p>
+                            <img src="/img/img/kia morning/kia morning (28).jpg">
+                            <br><br>
+                            <p>Khu vực cần số Kia Morning 2021 được thiết kế khá cầu kỳ</p>
+                        <h6>Tiện Nghi</h6>
+                            <p>Về giải trí, Kia Morning 2021 được nâng cấp lên màn hình cảm ứng 8 inch, cung cầp đầy đủ những tính năng giải trí. Hệ thống âm thanh xe gồm 6 loa, trong đó có 2 loa tweeter riêng cho dải âm sống động hơn. Các phiên bản Morning 2021 đều trang bị điều hoà tự động và tất nhiên là không có cửa gió ở hàng ghế sau.</p>
+                            <img src="/img/img/kia morning/kia morning (29).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 được nâng cấp sử dụng màn hình cảm ứng 8 inch</p>
+                        <h6>Vận Hành</h6>
+                            <p>Kia Morning 2021 vẫn duy trì động cơ Kappa 1.25L như trước. Với khối động cơ này, đa phần người dùng đánh giá xe Kia Morning vận hành khá tốt ở dải tốc dưới 80km/h. Như các mẫu xe hạng A khác, động cơ Morning được thiết kế nhằm phát huy thế mạnh ở dải vận tốc thấp đến trung bình. Không mạnh mẽ nhưng vẫn có độ vọt nhất định, đủ giúp xe di chuyển thoải mái trong đô thị.</p>
+                            <img src="/img/img/kia morning/kia morning (30).jpg">
+                            <br><br>
+                            <p>Kia Morning 2021 vẫn duy trì động cơ Kappa 1.25L như trước</p>
+                            <p>Có thể nói ở điều kiện đường sá bình thường nội thành thì sức mạnh động cơ Morning đáp ứng ổn thoả các mặt. Tuy nhiên nếu cần leo các dốc cao như ở hầm xe những trung tâm thương mại thì xe hơi đuối khi full tải. Nếu cố ép xe leo dốc nhanh bằng cách nhấn ga sâu, động cơ thường gầm lớn, thậm chí rung mạnh. Do đó, giải pháp tốt hơn hết là để xe từ từ “bò” chậm rãi lên dốc.</p>
+                            <p>Còn với đường trường, đường cao tốc thì hiển nhiên mẫu oto nhỏ nhắn Kia Morning khó thể “chiến” được với các xe lớn. Để vượt xe khác cần một “khoảng chuẩn bị” từ trước.</p>
+                            <p>Kia Morning 2021 được phát triển trên nền tảng khung gầm mới có tỉ lệ thép cường lực cao hơn, tăng độ cứng chắc cho khung xe. Hệ thống treo xe theo phong cách êm ái kiểu xe đô thị.</p>
+                            <img src="/img/img/kia morning/kia morning (31).jpg">
+                            <br><br>
+                            <p>Trải nghiệm thực tế, khi chạy Morning trên cao tốc ở dải tốc 100 km/h, xe vẫn cho cảm giác khá tự tin. Điều này chủ yếu nhờ khung gầm cứng chắc hơn và xe có thêm hệ thống cân bằng điện tử.</p>
+                            <p>Về mức tiêu hao nhiên liệu Kia Morning, do sử dụng động cơ cỡ nhỏ nên xe khá tiết kiệm xăng. Mức tiêu thụ xăng trung bình ở bản xe Morning số tự động trong tầm 5 – 6 lít/100km với đường hỗn hợp.</p>
+                        <h6>Bảng Giá Xe</h6> 
+                            <img src="/img/img/kia morning/kia morning (32).jpg">
+                        <h6>An Toàn</h6>
+                            <ul>Hệ thống an toàn trên Kia Morning 2021 có sự nâng cấp đáng kể. Bên cạnh các tính năng chống bó cứng phanh, camera lùi, 2 túi khí… New Morning đã có thêm hệ thống cân bằng điện tử và hỗ trợ khởi hành ngang dốc. Hai tính năng nâng cấp mới này có thể rất cơ bản trên những xe phân khúc cao, nhưng với xe hạng A như Morning thì quả là một ưu điểm lớn. Trong phân khúc hiện chỉ có Kia Morning và VinFast Fadil có hai trang bị này.
+                                <li>2 túi khí</li>
+                                <li>Phanh ABS</li>
+                                <li>Cân bằng điện tử</li>
+                                <li>Khởi hành ngang dốc</li>
+                                <li>Camera lùi</li>
+                                <li>Camera sau</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Số Chi Tiết</h6>
+                        <table border="solid" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td><strong><i>Tên xe</i></strong></td>
+                                <td><strong>Kia Morning GT-Line</strong></td>
+                                <td><strong>Kia Morning X-Line</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Số chỗ ngồi</i></strong></td>
+                                <td>04 chỗ ngồi</td>
+                                <td>04 chỗ ngồi</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Kích thước tổng thể DxRxC (mm)</i></strong></td>
+                                <td>3.595 x 1.595 x 1.485</td>
+                                <td>3.595 x 1.595 x 1.485</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Chiều dài cơ sở</i></strong></td>
+                                <td>2400</td>
+                                <td>2400</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Bán kính vòng quay</i></strong></td>
+                                <td>4.7m</td>
+                                <td>4.7m</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Tải trọng</i></strong></td>
+                                <td>400kg</td>
+                                <td>400kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Động cơ</i></strong></td>
+                                <td>Xăng, 1.25L - 83 Hp</td>
+                                <td>Xăng, 1.25L - 83 Hp</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Dung tích động cơ</i></strong></td>
+                                <td>1250cc</td>
+                                <td>1250cc</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Công suất cực đại (Ps/rpm)</i></strong></td>
+                                <td>83/6.000</td>
+                                <td>83/6.000</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Mô men xoắn cực đại (Nm/rpm)</i></strong></td>
+                                <td>120/4.000</td>
+                                <td>120/4.000</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Hộp số</i></strong></td>
+                                <td>Tự động 4 cấp</td>
+                                <td>Tự động 4 cấp</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Hệ thống treo trước/sau</i></strong></td>
+                                <td>McPherson/Trục xoắn lò xo trụ</td>
+                                <td>McPherson/Trục xoắn lò xo trụ</td>
+                            </tr>
+                            <tr>
+                                <td><strong><i>Phanh trước/sau</i></strong></td>
+                                <td>Đĩa/Tang trống</td>
+                                <td>Đĩa/Tang trống</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
